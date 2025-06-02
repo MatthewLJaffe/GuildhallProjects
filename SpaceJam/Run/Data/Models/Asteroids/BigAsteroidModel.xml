@@ -1,0 +1,3 @@
+<Model name="BigAsteroid" path="Data/Models/Asteroids/BigAsteroid.obj" material="Data/Materials/Asteroids/BigAsteroidMaterial.xml">
+  <Transform x="1,0,0" y="0,0,1" z="0,-1,0" t="0,0,0" scale="20.0" rot="0,0,0"/>
+</Model>

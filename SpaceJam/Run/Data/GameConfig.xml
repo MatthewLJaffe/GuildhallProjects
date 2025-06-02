@@ -1,0 +1,7 @@
+<GameConfig
+  windowTitle="Spacejam"
+  engineDataPath="../../Engine/Data"
+  readInPrecompiledShaders="true"
+  writeOutCompiledShaders="false"
+  useFastDefinitions="false"
+/>

@@ -1,0 +1,9 @@
+<Material
+  name="asteroid"
+  shader="Data/Shaders/Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Images/Asteroid2c_Color_2K.png"
+  normalTexture="Data/Images/Asteroid2c_NormalDX_2K.png"
+  specGlossEmitTexture="Data/Images/Asteroid2c_SpecGlossEmiss.png"
+  color="255,255,255,255"
+/>

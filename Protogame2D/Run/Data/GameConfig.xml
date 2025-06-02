@@ -1,0 +1,6 @@
+<GameConfig
+  windowTitle="Protogame2D"
+  engineDataPath="../../Engine/Data"
+  readInPrecompiledShaders="true"
+  writeOutCompiledShaders="false"
+/>

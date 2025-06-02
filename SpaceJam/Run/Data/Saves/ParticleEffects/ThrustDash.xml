@@ -1,0 +1,88 @@
+<ParticleEffect name="ThrustDash" scale="1.000">
+<Emitters>
+<Emitter name="ThrustDashFire">
+	<Emission emissionRate="200.0" emissionRadius="0.05" boxDimensions="1.000,1.000,1.000" lifetime="0.25, 0.50" emissionType="0" meshFilePath="" meshScale="1.000,1.000,1.000" emissionMode="0" repeat="0" repeatTime="1.00" emitTime="-1.00" numBursts="1" burstInterval="0.100"/>
+	<Physics ignoreWorldPhysics="1" velocityXRange="-3.00,-1.50" velocityYRange="0.00,0.00" velocityZRange="0.00,0.00" inheritEmitterVelocity="1" inheritVelocityPercentage="1.00" setLifetimeVelocity="0" velocityMode="0" orientToVelocity="1" perlinNoiseForce="0.00"
+	curlNoiseAffectPosition="0" curlNoiseScale="0.75" curlNoiseSampleSize="0.75" curlNoiseOctives="1" curlNoisePan="4.00, 4.00, 4.00"
+	pointForcePosition="-3.00,0.00,0.00" pointForceFalloffExponent="2.00" pointForceAttract="true" pointForceRadius="3.00"
+	returnToOriginForce="0.00" returnToOriginDelay="1.00" ignoreForcesWhenAtOrigin="0"
+	vortexAxisDir="1.00,0.00,0.00" vortexAxisOrigin="0.00,0.00,0.00" vortexForceRadius="0.00">
+	</Physics>
+	<Appearance spriteSheetFilePath="Data/Images/T_Fire_SubUV.png" spriteSheetDimensions="6,6" spriteStartIndex="0" spriteEndIndex="35" stretchBillboard="0" lengthPerSpeed="0.00" spriteEasingFunction="0" stretchMode="0" renderMode="0" particleMeshFilePath="" partialMeshTriangles="0">
+		<ColorOverLife color="90,246,255,255" time="0.00"/>
+		<ColorOverLife color="34,176,243,255" time="0.40"/>
+		<ColorOverLife color="25,58,253,255" time="0.70"/>
+		<ColorOverLife color="24,57,253,0" time="1.00"/>
+		<PanTexture textureToPan="Data/Images/T_Fire_Tiled_D.png" panTextureSampleScale="1.00,1.00" panTextureSpeed="0.00,0.00"/>
+	</Appearance>
+<FloatGraphs>
+	<FloatGraph floatGraphType="0" constantValue="30.000" dataMode="0" minValue="10.000" maxValue="10.000">
+		<FloatPoint minValue="10.000" maxValue="10.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="1" constantValue="5.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="2" constantValue="1.000" dataMode="1" minValue="0.000" maxValue="1.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="3" constantValue="4.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="4" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="5" constantValue="0.500" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="6" constantValue="0.200" dataMode="0" minValue="1.000" maxValue="1.000">
+		<FloatPoint minValue="1.000" maxValue="1.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="7" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.400" easingFunction="0"/>
+		<FloatPoint minValue="1.000" maxValue="1.000" time="0.600" easingFunction="0"/>
+		<FloatPoint minValue="0.500" maxValue="0.500" time="0.800" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="8" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="9" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+</FloatGraphs>
+<Float2Graphs>
+	<Float2Graph float2GraphType="0" constantValue="1.000, 1.000" dataMode="2" minValue="0.250, 0.250" maxValue="0.500, 0.500">
+		<Float2Point minValue="0.200,0.200" maxValue="0.400,0.400" time="0.000" easingFunction="0"/>
+		<Float2Point minValue="0.075,0.080" maxValue="0.200,0.200" time="1.000" easingFunction="0"/>
+	</Float2Graph>
+</Float2Graphs>
+<Float3Graphs>
+	<Float3Graph float3GraphType="0" constantValue="0.000,0.000,0.000" dataMode="0" minValue="0.000,0.000,10.000" maxValue="0.000,0.000,10.000">
+		<Float3Point minValue="0.000,0.000,10.000" maxValue="0.000,0.000,10.000" time="0.000" easingFunction="0"/>
+	</Float3Graph>
+	<Float3Graph float3GraphType="1" constantValue="0.000,0.000,10.000" dataMode="0" minValue="0.000,0.000,10.000" maxValue="0.000,0.000,10.000">
+		<Float3Point minValue="0.000,0.000,10.000" maxValue="0.000,0.000,10.000" time="0.000" easingFunction="0"/>
+	</Float3Graph>
+	<Float3Graph float3GraphType="2" constantValue="0.000,0.000,0.000" dataMode="0" minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000">
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.000" easingFunction="0"/>
+	</Float3Graph>
+	<Float3Graph float3GraphType="3" constantValue="0.000,0.000,0.000" dataMode="0" minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000">
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.000" easingFunction="0"/>
+	</Float3Graph>
+	<Float3Graph float3GraphType="4" constantValue="1.000,1.000,1.000" dataMode="0" minValue="1.000,1.000,1.000" maxValue="1.000,1.000,1.000">
+		<Float3Point minValue="1.000,1.000,1.000" maxValue="1.000,1.000,1.000" time="0.000" easingFunction="0"/>
+	</Float3Graph>
+</Float3Graphs>
+<EmitterProperties lifetime="-1.00" startDelay="0.00" worldSimulation="0" emitEmitters="0" subEmitterFilePath="" minSubEmitterOrientation="0.00,0.00,0.00" maxSubEmitterOrientation="0.00,0.00,0.00">
+	<EmitterVelocity constantValue="0.000,0.000,0.000" dataMode="0" minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000">
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.000" easingFunction="0"/>
+	</EmitterVelocity>
+	<EmitterChildren>
+	</EmitterChildren>
+</EmitterProperties>
+</Emitter>
+</Emitters>
+	<EmitterInstances>
+		<EmitterInstance emitter="ThrustDashFire" position="0.00,0.00,0.00" orientationDegrees="0.00,0.00,0.00"/>
+	</EmitterInstances>
+</ParticleEffect>

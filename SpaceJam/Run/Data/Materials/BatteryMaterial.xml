@@ -1,0 +1,10 @@
+<Material
+  name="Batery"
+  shader="Data/Shaders/Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Images/battery_BaseColor.png"
+  normalTexture="Data/Images/battery_Normal.png"
+  specGlossEmitTexture="Data/Images/battery_SpecGlossEmit.png"
+
+  color="255,255,255,255"
+/>

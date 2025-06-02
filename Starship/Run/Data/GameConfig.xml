@@ -1,0 +1,6 @@
+<GameConfig
+  windowTitle="Space Jam"
+  engineDataPath="../../Engine/Data"
+  readInPrecompiledShaders="true"
+  writeOutCompiledShaders="false"
+/>

@@ -1,0 +1,958 @@
+<AnimationDefinitions>
+  
+  <AnimationDefinition name="TestAnim" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Ring-Sheet.png" spriteSheetDimensions="10,1" interpolateSprites="true">
+      <Keyframe time=".0" easingMode="Elastic" scale="1,1" color="255,255,255" rotation="0" spriteCoords="0,0"/>
+      <Keyframe time=".25" scale="2,2" color="255,255,255" rotation="270"  spriteCoords="5,0"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep3" localPosition="0,0" scale="1,1" color="255,255,255" rotation="0"/>
+      <Keyframe time="1.0" localPosition="0,1" scale="2,2" color="255,255,255" rotation="270"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="ButtonHover" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStart4" scale="1,1"/>
+      <Keyframe time=".25" scale="1.2,1.2"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="ButtonReset" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStop4" scale="1.2,1.2"/>
+      <Keyframe time=".25" scale="1,1"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="PlayerParticle" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStart2" scale="1,1" color="0,229,249,255"/>
+      <Keyframe time=".5" scale="0,0" color="0,229,249,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="PlayerStretch" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep5" scale="1,1"/>
+      <Keyframe time=".25" scale="1.3,.77"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="PlayerSquish" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep5" scale="1.3,.77"/>
+      <Keyframe time=".1" easingMode="SmoothStep5" scale=".66,1.5"/>
+      <Keyframe time=".2" easingMode="SmoothStep5" scale="1.15,.87"/>
+      <Keyframe time=".3" easingMode="SmoothStep5" scale="1,1"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="PlayerDash" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStart6" color="0,229,249,255"/>
+      <Keyframe time=".05" easingMode="SmoothStep5" color="255,255,255,255"/>
+      <Keyframe time=".2" easingMode="SmoothStep5"  color="255,255,255,255"/>
+      <Keyframe time=".25" easingMode="SmoothStep5" color="0,229,249,255"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStop5"  scale="1.3,.77" />
+      <Keyframe time=".05" easingMode="SmoothStep5" scale="1.6,.625" />
+      <Keyframe time=".2" easingMode="SmoothStep5"  scale="1.0, 1.0" />
+      <Keyframe time=".25" easingMode="SmoothStep5" scale="1.3,.77" />
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="DashRing" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Ring-Sheet.png" spriteSheetDimensions="10,1">
+      <Keyframe time=".0" spriteCoords=   "0,0"/>
+      <Keyframe time=".03" spriteCoords=  "1,0"/>
+      <Keyframe time=".06" spriteCoords=  "2,0"/>
+      <Keyframe time=".09" spriteCoords=  "3,0"/>
+      <Keyframe time=".12" spriteCoords=  "4,0"/>
+      <Keyframe time=".15" spriteCoords=  "5,0"/>
+      <Keyframe time=".18" spriteCoords=  "6,0"/>
+      <Keyframe time=".21" spriteCoords=  "7,0"/>
+      <Keyframe time=".24" spriteCoords=  "8,0"/>
+      <Keyframe time=".27" spriteCoords=  "9,0"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode="Elastic"  scale=".5,.5"/>
+      <Keyframe time=".3" easingMode="SmoothStep5" scale="1.2,1.2"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode ="SmoothStart2" color="0,229,249,255"/>
+      <Keyframe time=".3" color="0,229,249,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="ProjectileSpawn" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" color="255,255,255"/>
+      <Keyframe time="0.25" color="255,255,255"/>
+      <Keyframe time="0.5" color="236,1,106"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" easingMode="Elastic"  scale=".125,.125" />
+      <Keyframe time="0.5" easingMode="Elastic"  scale="1.0,1.0" />
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss1Spawn" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Boss1-Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time=".0"  spriteCoords= "0,0"/>
+      <Keyframe time=".03" spriteCoords=  "1,0"/>
+      <Keyframe time=".06" spriteCoords=  "2,0"/>
+      <Keyframe time=".09" spriteCoords=  "3,0"/>
+      <Keyframe time=".12" spriteCoords=  "4,0"/>
+      <Keyframe time=".15" spriteCoords=  "5,0"/>
+      <Keyframe time=".18" spriteCoords=  "6,0"/>
+      <Keyframe time=".21" spriteCoords=  "7,0"/>
+      <Keyframe time=".24" spriteCoords=  "8,0"/>
+      <Keyframe time=".27" spriteCoords=  "9,0"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" scale="1.0,1.0" />
+      <Keyframe time="0.3" easingMode="SmoothStep3"  scale="1.0,1.0" />
+      <Keyframe time="0.35" easingMode="SmoothStep3"  scale="1.2,1.2" />
+      <Keyframe time="0.4" easingMode="SmoothStep3"  scale="1.0,1.0" />
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss1EyeOpen" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Boss1-Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time=".0"  spriteCoords= "3,1"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStep5"  scale="1.0,1.0" />
+      <Keyframe time="0.2" easingMode="SmoothStep5"  scale="1.2,1.2" />
+      <Keyframe time="0.4" easingMode="SmoothStep5"  scale="1.0,1.0" />
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss1Attack" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Boss1-Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time="0.0" easingMode="SmoothStep5" color="236,1,106" scale="1.0,1.0"/>
+      <Keyframe time="0.1" easingMode="SmoothStep5" color="255,255,255" scale="1.3,1.3" />
+      <Keyframe time="0.2" easingMode="SmoothStep5" color="236,1,106" scale="1.0,1.0" />
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Metronome1Pulse" playbackMode="Loop">
+    <Track>
+      <Keyframe time="0.0" scale="1.5,1.5" />
+      <Keyframe time="0.23622" scale="1.0,1.0" />
+      <Keyframe time="0.4724409" scale="1.5,1.5" />
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss1Wiggle" playbackMode="Loop">
+    <Track spriteSheet="Data/Images/Boss1-Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time="0.0" rotation="0.0" scale="1,1" spriteCoords= "3,1"/>
+      <Keyframe time="0.1" rotation="0.0" easingMode="SmoothStep5" scale="1.1, .9"/>
+      <Keyframe time="0.2" rotation="0.0" easingMode="SmoothStep5" scale=".9, 1.1"/>
+      <Keyframe time="0.3" rotation="0.0" easingMode="SmoothStep5" scale="1.0, 1.0"/>
+      <Keyframe time="0.4" rotation="0.0" easingMode="SmoothStep5" scale="1.0, 1.0"/>
+      <Keyframe time="0.5" rotation="0.0" easingMode="SmoothStep5" scale="1.3, .76"/>
+      <Keyframe time="0.6" rotation="0.0" easingMode="SmoothStep5" scale="1.1, .9"/>
+      <Keyframe time="0.7" rotation="0.0" easingMode="SmoothStep5" scale="1.0, 1.0"/>
+      <Keyframe time="0.8" rotation="0.0" easingMode="SmoothStep5" scale="1.2, .83"/>
+      <Keyframe time="0.9" rotation="0.0" easingMode="SmoothStep5" scale="1.1, .9"/>
+      <Keyframe time="1.0" rotation="0.0" easingMode="SmoothStep5" scale="1.0, 1.0"/>
+      <Keyframe time="1.1" rotation="0.0" easingMode="SmoothStep5" scale=".83, 1.2"/>
+      <Keyframe time="1.2" rotation="0.0" easingMode="SmoothStep5" scale=".9, 1.1"/>
+      <Keyframe time="1.3" rotation="0.0" easingMode="SmoothStep5" scale="1.1, .9"/>
+      <Keyframe time="1.4" rotation="0.0" easingMode="SmoothStep5" scale="1.0, 1.0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss1Shrink" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Boss1-Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time="0.0" spriteCoords=  "3,1"/>
+      <Keyframe time="0.1" spriteCoords=  "4,1"/>
+      <Keyframe time="0.2" spriteCoords=  "5,1"/>
+      <Keyframe time="0.3" spriteCoords=  "6,1"/>
+      <Keyframe time="0.4" spriteCoords=  "7,1"/>
+      <Keyframe time="0.5" spriteCoords=  "8,1"/>
+      <Keyframe time="0.6" spriteCoords=  "9,1"/>
+      <Keyframe time="0.7" spriteCoords=  "10,1"/>
+      <Keyframe time="0.8" spriteCoords=  "11,1"/>
+      <Keyframe time="0.9" spriteCoords=  "12,1"/>
+      <Keyframe time="1.0" spriteCoords=  "13,1"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStep5" scale="2,2"/>
+      <Keyframe time="1.0" easingMode="SmoothStep5" scale="2,2"/>
+      <Keyframe time="1.2" easingMode="SmoothStep5" scale=".5,.5"/>
+      <Keyframe time="1.4" easingMode="SmoothStep5" scale="1.2, 1.2"/>
+      <Keyframe time="1.5" easingMode="SmoothStep5" scale="1.0, 1.0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss1BeatDrop" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Ring-Sheet.png" spriteSheetDimensions="10,1">
+      <Keyframe time=".0" spriteCoords=   "0,0"/>
+      <Keyframe time=".03" spriteCoords=  "1,0"/>
+      <Keyframe time=".06" spriteCoords=  "2,0"/>
+      <Keyframe time=".09" spriteCoords=  "3,0"/>
+      <Keyframe time=".12" spriteCoords=  "4,0"/>
+      <Keyframe time=".15" spriteCoords=  "5,0"/>
+      <Keyframe time=".18" spriteCoords=  "6,0"/>
+      <Keyframe time=".21" spriteCoords=  "7,0"/>
+      <Keyframe time=".24" spriteCoords=  "8,0"/>
+      <Keyframe time=".27" spriteCoords=  "9,0"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode="Elastic"  scale=".5,.5"/>
+      <Keyframe time=".3" easingMode="SmoothStep5" scale="2.5,2.5"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode ="SmoothStart3" color="236,1,106,255"/>
+      <Keyframe time=".3" color="236,1,106,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="AttractProjectile" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep5" rotation= "0" scale ="2.0, 2.0"/>
+      <Keyframe time="2.5"  rotation="180" scale=".0,.0"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep3" color="255,255,255,255"/>
+      <Keyframe time=".5" easingMode="SmoothStep3" color="255,255,255,255"/>
+      <Keyframe time="1.0" easingMode="SmoothStep3" color="236,1,106,255"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SpawnBox" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" color="255,255,255,0"/>
+      <Keyframe time=".25" easingMode="SmoothStep3" color="255,255,255,255"/>
+      <Keyframe time=".4" easingMode="SmoothStep3" color="236,1,106"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SpawnBar" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep3" color="236,1,106,0"/>
+      <Keyframe time=".25" easingMode="SmoothStep3" color="236,1,106,100"/>
+      <Keyframe time="1.0" easingMode="SmoothStep3" color="236,1,106,100"/>
+      <Keyframe time="1.2" easingMode="SmoothStep3" color="255,255,255,255"/>
+      <Keyframe time="1.3" easingMode="SmoothStep3" color="236,1,106,255"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep3" scale="1,1"/>
+      <Keyframe time="1.0" easingMode="SmoothStep3" scale="1.0,1.0"/>
+      <Keyframe time="1.2" easingMode="SmoothStep3" scale="1.2, 1.2"/>
+      <Keyframe time="1.3" easingMode="SmoothStep3" scale=".9,.9"/>
+      <Keyframe time="1.35" easingMode="SmoothStep3" scale="1.0,1.0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SpawnCircleBullet" playbackMode="Once">
+    <Track spriteSheet="Data/Images/DottedRing.png" spriteSheetDimensions="2,1">
+      <Keyframe time="0.0" spriteCoords="0,0"/>
+      <Keyframe time="1.1" spriteCoords="1,0"/>
+      <Keyframe time="1.2" spriteCoords="1,0"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" rotation="0"/>
+      <Keyframe time="1.0" rotation="90"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep3" color="236,1,106,0"/>
+      <Keyframe time=".25" easingMode="SmoothStep3" color="236,1,106,255"/>
+      <Keyframe time="1.0" easingMode="SmoothStep3" color="236,1,106,255"/>
+      <Keyframe time="1.1" easingMode="SmoothStep3" color="255,255,255,255"/>
+      <Keyframe time="1.25" easingMode="SmoothStep3" color="255,255,255,255"/>
+      <Keyframe time="1.4" easingMode="SmoothStep3" color="236,1,106,255"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep3" scale="1,1"/>
+      <Keyframe time="1.0" easingMode="SmoothStep3" scale="1,1"/>
+      <Keyframe time="1.1" easingMode="SmoothStep3" scale=".1,.1"/>
+      <Keyframe time="1.25" easingMode="Elastic" scale="1.0,1.0"/>
+      <Keyframe time="1.75" easingMode="SmoothStart3" scale="1.0,1.0"/>
+      <Keyframe time="2.0" easingMode="SmoothStart3" scale=".1,.1"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss1HeadBop" playbackMode="Loop">
+    <Track spriteSheet="Data/Images/Boss1-Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time=".0"  spriteCoords= "3,1"/>
+      <Keyframe time=".1"  spriteCoords= "3,1"/>
+      <Keyframe time=".2"  spriteCoords= "3,1"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStep5" rotation="0" localPosition="0,0"/>
+      <Keyframe time="0.23622" easingMode="SmoothStep3" rotation="6" localPosition="0,-12"/>
+      <Keyframe time="0.47244" easingMode="SmoothStep5" rotation="0" localPosition="0,0"/>
+      
+      <Keyframe time="0.70866" easingMode="SmoothStep3" rotation="-6" localPosition="0,-12"/>
+      <Keyframe time="0.94488" easingMode="SmoothStep5" rotation="0" localPosition="0,0"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" color="236,1,106,255"/>
+      <Keyframe time="0.17" color="255,255,255,255"/>
+      <Keyframe time="0.23622" color="255,255,255,255"/>
+      <Keyframe time=".28" color="236,1,106,255"/>
+      
+      <Keyframe time="0.65" color="236,1,106,255"/>
+      <Keyframe time="0.70866" color="255,255,255,255"/>
+      <Keyframe time=".75" color="236,1,106,255"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0"  easingMode="SmoothStep3" scale="1.0,1.0"/>
+      
+      <Keyframe time="0.18" easingMode="SmoothStep3" scale="1.0,1.0"/>
+      <Keyframe time="0.23622" easingMode="SmoothStep3" scale="1.2,1.2"/>
+      <Keyframe time=".28" easingMode="SmoothStep3" scale="1.0,1.0"/>    
+      
+      <Keyframe time="0.65" easingMode="SmoothStep3" scale="1.0,1.0"/>
+      <Keyframe time="0.70866" easingMode="SmoothStep3" scale="1.2,1.2"/>
+      <Keyframe time=".75" easingMode="SmoothStep3" scale="1.0,1.0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SpawnConeHazard" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep3" color="236,1,106,0"/>
+      <Keyframe time=".25" easingMode="SmoothStep3" color="236,1,106,100"/>
+      <Keyframe time=".75" easingMode="SmoothStep3" color="236,1,106,100"/>
+      <Keyframe time=".8" easingMode="SmoothStep3" color="255,255,255,255"/>
+      <Keyframe time=".85" easingMode="SmoothStep3" color="236,1,106,100"/>
+      <Keyframe time="1.0" easingMode="SmoothStep3" color="236,1,106,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SquareProjectile" playbackMode="Once">
+    <Track spriteSheet="Data/Images/CubeProjectileSheet.png" spriteSheetDimensions="9,1">
+      <Keyframe time=".00"  spriteCoords= "0,0"/>
+      <Keyframe time=".05"  spriteCoords= "1,0"/>
+      <Keyframe time=".1"  spriteCoords= "2,0"/>
+      <Keyframe time=".15"  spriteCoords= "3,0"/>
+      <Keyframe time=".2"  spriteCoords= "4,0"/>
+      <Keyframe time=".25"  spriteCoords= "5,0"/>
+      <Keyframe time=".3"  spriteCoords= "6,0"/>
+      <Keyframe time=".35"  spriteCoords= "7,0"/>
+      <Keyframe time=".4"  spriteCoords= "8,0"/>
+      <Keyframe time=".45"  spriteCoords= "8,0"/>
+    </Track>
+    
+    <Track>
+      <Keyframe time=".0"  scale= ".1,.1" color="255,255,255"/>
+      <Keyframe time=".25" easingMode="SmoothStop3" scale= ".5, .5" color="255,255,255"/>
+      <Keyframe time="2.0"  scale= ".2, .2" color="255,255,255"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="ExplodingProjectile" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep3" scale= "1.0, 1.0"/>
+      <Keyframe time=".5" easingMode="SmoothStep3" scale= "1.1, 1.1"/>
+      <Keyframe time="1.0" easingMode="SmoothStart3" scale= ".9, .9"/>
+      <Keyframe time="1.2" easingMode="SmoothStep3" scale= "2.0, 2.0"/>
+      <Keyframe time="1.4" easingMode="SmoothStep3" scale= ".1, .1"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStart6" rotation="0"/>
+      <Keyframe time="1.4" easingMode="SmoothStart6" rotation="180"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStart2" color="236,1,106,0"/>
+      <Keyframe time=".25" color="236,1,106,255"/>
+      <Keyframe time=".4" color="255,255,255,255"/>
+      <Keyframe time=".55" color="236,1,106,255"/>
+      <Keyframe time=".7" color="255,255,255,255"/>
+      <Keyframe time=".85" color="236,1,106,255"/>
+
+      <Keyframe time=".9" color="236,1,106,255"/>
+      <Keyframe time="1.0" color="255,255,255,255"/>
+      <Keyframe time="1.2" color="255,255,255,255"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss1Thump" playbackMode="Loop">
+    <Track spriteSheet="Data/Images/Boss1-Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time=".0"  spriteCoords= "0,2"/>
+      <Keyframe time=".1"  spriteCoords= "0,2"/>
+      <Keyframe time=".2"  spriteCoords= "0,2"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStep5" rotation="0" localPosition="0,0"/>
+      <Keyframe time="0.23622" easingMode="SmoothStep3" rotation="12" localPosition="6,6"/>
+      <Keyframe time="0.47244" easingMode="SmoothStep5" rotation="0" localPosition="0,0"/>
+
+      <Keyframe time="0.70866" easingMode="SmoothStep3" rotation="-12" localPosition="-6,6"/>
+      <Keyframe time="0.94488" easingMode="SmoothStep5" rotation="0" localPosition="0,0"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" color="236,1,106,255"/>
+      <Keyframe time="0.17" color="255,255,255,255"/>
+      <Keyframe time="0.23622" color="255,255,255,255"/>
+      <Keyframe time=".28" color="236,1,106,255"/>
+
+      <Keyframe time="0.65" color="236,1,106,255"/>
+      <Keyframe time="0.70866" color="255,255,255,255"/>
+      <Keyframe time=".75" color="236,1,106,255"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0"  easingMode="SmoothStep3" scale="1.0,1.0"/>
+
+      <Keyframe time="0.18" easingMode="SmoothStep3" scale="1.0,1.0"/>
+      <Keyframe time="0.23622" easingMode="SmoothStep3" scale="1.4,1.4"/>
+      <Keyframe time=".28" easingMode="SmoothStep3" scale="1.0,1.0"/>
+
+      <Keyframe time="0.65" easingMode="SmoothStep3" scale="1.0,1.0"/>
+      <Keyframe time="0.70866" easingMode="SmoothStep3" scale="1.4,1.4"/>
+      <Keyframe time=".75" easingMode="SmoothStep3" scale="1.0,1.0"/>
+    </Track>
+  </AnimationDefinition>
+
+
+  <AnimationDefinition name="Boss1Shocked" playbackMode="Loop">
+    <Track spriteSheet="Data/Images/Boss1-Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time=".0" rotation="0"  spriteCoords= "0,2"/>
+      <Keyframe time=".1" rotation="0" spriteCoords= "0,2"/>
+      <Keyframe time=".2" rotation="0" spriteCoords= "0,2"/>
+    </Track>
+  </AnimationDefinition>
+  
+  <AnimationDefinition name="Boss1Die" playbackMode="Loop">
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStep5" rotation="0"/>
+      <Keyframe time="0.1" easingMode="SmoothStep3" rotation="6" localPosition="3,3"/>
+      <Keyframe time="0.15" easingMode="SmoothStep3" rotation="0" localPosition="0,0"/>
+      <Keyframe time="0.2" easingMode="SmoothStep3" rotation="-6" localPosition="-3,3"/>
+      <Keyframe time="0.25" easingMode="SmoothStep3" rotation="0" localPosition="0,0"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" color="236,1,106,255"/>
+      <Keyframe time="0.1" color="255,255,255,255"/>
+      <Keyframe time="0.2" color="236,1,106,255"/>
+      <Keyframe time="0.25" color="255,255,255,255"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0"  easingMode="SmoothStep3" scale="1.0, 1.0"/>
+      <Keyframe time="0.05"  easingMode="SmoothStep3" scale=".95, .95"/>
+      <Keyframe time="0.1"  easingMode="SmoothStep3" scale="1.05, 1.05"/>
+      <Keyframe time="0.15"  easingMode="SmoothStep3" scale="1.0, 1.0"/>
+      <Keyframe time="0.2"  easingMode="SmoothStep3" scale=".95, .95"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="ExplodeParticle" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Ring-Sheet.png" spriteSheetDimensions="10,1">
+      <Keyframe time=".0" spriteCoords=   "0,0"/>
+      <Keyframe time=".03" spriteCoords=  "1,0"/>
+      <Keyframe time=".06" spriteCoords=  "2,0"/>
+      <Keyframe time=".09" spriteCoords=  "3,0"/>
+      <Keyframe time=".12" spriteCoords=  "4,0"/>
+      <Keyframe time=".15" spriteCoords=  "5,0"/>
+      <Keyframe time=".18" spriteCoords=  "6,0"/>
+      <Keyframe time=".21" spriteCoords=  "7,0"/>
+      <Keyframe time=".24" spriteCoords=  "8,0"/>
+      <Keyframe time=".27" spriteCoords=  "9,0"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode="Elastic"  scale=".1,.1"/>
+      <Keyframe time=".3" easingMode="SmoothStep5" scale=".5,.5"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode ="SmoothStart2" color="255,255,255,255"/>
+      <Keyframe time=".2" easingMode ="SmoothStart2" color="255,255,255,255"/>
+      <Keyframe time=".35" easingMode ="SmoothStart2" color="255,255,255,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss1Fade" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode ="SmoothStart4"  color="236,1,106,255"/>
+      <Keyframe time="1.0" easingMode ="SmoothStart2"  color="236,1,106,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss2HairFlip" playbackMode="Loop">
+    <Track spriteSheet="Data/Images/Boss2HairSheet.png" spriteSheetDimensions="2,1">
+      <Keyframe time="0" easingMode="SmoothStep5" rotation="0" spriteCoords= "0,0"/>
+      <Keyframe time="0.1171875" easingMode="SmoothStep5" rotation="20" spriteCoords= "1,0"/>
+      <Keyframe time="0.234375" easingMode="SmoothStep5" rotation="0"/>
+      <Keyframe time="0.3515625" easingMode="SmoothStep5" rotation="-20" spriteCoords= "0,0"/>
+      <Keyframe time="0.46875" easingMode="SmoothStep5" rotation="0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss2FaceMove" playbackMode="Loop">
+    <Track spriteSheet="Data/Images/Boss2FaceSheet.png" spriteSheetDimensions="2,1">
+      <Keyframe time="0" easingMode="SmoothStep5" localPosition="0,0" spriteCoords="0,0"/>
+      <Keyframe time="0.1171875" easingMode="SmoothStep5" localPosition="0,-6" spriteCoords="0,0"/>
+      <Keyframe time="0.234375" easingMode="SmoothStep5" localPosition="0,0" spriteCoords="0,0"/>
+      <Keyframe time="0.3515625" easingMode="SmoothStep5" localPosition="0,3" spriteCoords="0,0"/>
+      <Keyframe time="0.46875" easingMode="SmoothStep5" localPosition="0,0" spriteCoords="0,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="FlameParticle" playbackMode="Once">
+    <Track>
+      <Keyframe time="0" scale=".5, .5" easingMode="SmoothStep5"/>
+      <Keyframe time=".125" scale="1.5, 1.5" easingMode="SmoothStep5"/>
+      <Keyframe time="1.0" scale=".25, .25" easingMode="SmoothStep5"/>
+    </Track>
+    <Track>
+      <Keyframe time="0" color="236,1,106,255" easingMode="SmoothStep5"/>
+      <Keyframe time=".90" color="236,1,106,255" easingMode="SmoothStep5"/>
+      <Keyframe time="1" color="236,1,106,0" easingMode="SmoothStep5"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss2SpawnParticle" playbackMode="Once">
+    <Track>
+      <Keyframe time="0" scale=".7, .7" color ="255,255,255,0" easingMode="SmoothStep5"/>
+      <Keyframe time="0.15625" scale="1.5, 1.5" color ="255,255,255,255" easingMode="SmoothStep5"/>
+      <Keyframe time="0.234375" scale=".7, .7" color ="255,255,255,0" easingMode="SmoothStep5"/>
+
+      <Keyframe time="0.3125" scale="1.5, 1.5" color ="255,255,255,255" easingMode="SmoothStep5"/>
+      <Keyframe time="0.390625" scale=".7, .7" color ="255,255,255,0" easingMode="SmoothStep5"/>
+
+      <Keyframe time="0.46875" scale="1.5, 1.5" color ="255,255,255,255" easingMode="SmoothStep5"/>
+      <Keyframe time="0.546875" scale=".7, .7" color ="255,255,255,0" easingMode="SmoothStep5"/>
+      
+      <Keyframe time="0.8203125" scale=".7, .7" color ="255,255,255,0" easingMode="SmoothStep5"/>
+      <Keyframe time="0.9375 " scale="2, 2" color ="255,255,255,255" easingMode="SmoothStep5"/>
+      <Keyframe time="1.0546875" scale="2, 2" color ="255,255,255,255" easingMode="SmoothStep5"/>
+      <Keyframe time="1.171875" scale=".7, .7" color ="255,255,255,0" easingMode="SmoothStep5"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss2Spawn" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Boss2Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time="0" scale=".25, .25" color ="255,255,255,0" easingMode="Elastic" spriteCoords= "0,0"/>
+      <Keyframe time="0.1171875" scale="1.0, 1.0" color="236,1,106,255" easingMode="Elastic" spriteCoords= "0,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="BoopBoopBeep" playbackMode="Once">
+    <Track spriteSheet="Data/Images/DottedRing.png" spriteSheetDimensions="2,1">
+      <Keyframe time="0.0" scale="1.0, 1.0" color="236,1,106,0" easingMode="SmoothStep5" spriteCoords= "0,0"/>
+      <Keyframe time="0.15625" scale="1.0, 1.0" color="236,1,106,255" easingMode="SmoothStep5" spriteCoords= "0,0"/>
+      <Keyframe time="0.46875" scale="1.0, 1.0" color="236,1,106,255" easingMode="SmoothStep5" spriteCoords= "0,0"/>
+
+      <Keyframe time="0.546875" scale=".5, .5" color="255,255,255,255" easingMode="SmoothStep5" spriteCoords= "1,0"/>
+      <Keyframe time="0.625" scale="1, 1" color="236,1,106,255" easingMode="SmoothStep5" spriteCoords= "1,0"/>
+
+      <Keyframe time="0.703125" scale=".5, .5" color="255,255,255,255" easingMode="SmoothStep5" spriteCoords= "1,0"/>
+      <Keyframe time="0.78125" scale="1.0, 1.0" color="236,1,106,255" easingMode="SmoothStep5" spriteCoords= "1,0"/>
+
+      <Keyframe time="0.859375" scale=".5, .5" color="255,255,255,255" easingMode="SmoothStep5" spriteCoords= "1,0"/>
+      <Keyframe time="0.9375" scale="1.0, 1.0" color="236,1,106,255" easingMode="SmoothStep5" spriteCoords= "1,0"/>
+      <Keyframe time="1.015625" scale=".5, .5" color="255,255,255,0" easingMode="SmoothStep5" spriteCoords= "1,0"/>
+    </Track>
+    
+  </AnimationDefinition>
+
+
+  <AnimationDefinition name="TeleportIn" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Boss2Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time="0.0" scale=".75, .75" color="255,255,255,100" easingMode="SmoothStep5" spriteCoords= "0,0"/>
+      <Keyframe time="0.25" scale="1.3, 1.3" color="255,255,255,255" easingMode="SmoothStep5" spriteCoords= "0,0"/>
+      <Keyframe time="0.4" scale="1.0, 1.0" color="236,1,106,255" easingMode="SmoothStep5" spriteCoords= "0,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="TeleportInAndOut" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Boss2Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time="0.0" scale=".75, .75" color="255,255,255,100" easingMode="SmoothStep5" spriteCoords= "0,0"/>
+      <Keyframe time="0.15" scale="1.3, 1.3" color="255,255,255,255" easingMode="SmoothStep5" spriteCoords= "0,0"/>
+      <Keyframe time="0.2" scale="1.0, 1.0" color="236,1,106,255" easingMode="SmoothStep5" spriteCoords= "0,0"/>
+      <Keyframe time="0.5" scale="1.0, 1.0" color="236,1,106,255" easingMode="SmoothStep5" spriteCoords= "0,0"/>
+      <Keyframe time=".75" scale="1.0, 1.0" color="236,1,106,0" easingMode="SmoothStep5" spriteCoords= "0,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="TeleportParticle" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" scale=".5, .5" color="236,1,106,0" easingMode="SmoothStep5"/>
+      <Keyframe time="0.25" scale="1.0, 1.0" color="236,1,106,100" easingMode="SmoothStep5"/>
+      <Keyframe time="2.0" scale="1.0, 1.0" color="236,1,106,100" easingMode="SmoothStep5"/>
+      <Keyframe time="2.5" scale="1.0, 1.0" color="236,1,106,0" easingMode="SmoothStep5"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="DevilFace" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Boss2FaceSheet.png" spriteSheetDimensions="2,1">
+      <Keyframe time="0.0" scale="1.0, 1.0" color="0,0,0,255" easingMode="SmoothStep5" spriteCoords= "1,0"/>
+      <Keyframe time="0.1" scale="1.0, 1.0" color="0,0,0,255" easingMode="SmoothStep5" spriteCoords= "1,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="BulletFadeIn" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" color="236,1,106,50" easingMode="SmoothStep5"/>
+      <Keyframe time="0.5" color="236,1,106,255" easingMode="SmoothStep5"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="ScytheFadeOut" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" color="236,1,106,255" easingMode="SmoothStep5"/>
+      <Keyframe time="1.0" color="236,1,106,255" easingMode="SmoothStep5"/>
+      <Keyframe time="1.25" color="236,1,106,0" easingMode="SmoothStep5"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="ProjectileBob" playbackMode="Loop">
+    <Track>
+      <Keyframe time="0.0" localPosition="0,0" easingMode="SmoothStep5"/>
+      <Keyframe time="0.5" localPosition="0,16" easingMode="SmoothStep5"/>
+      <Keyframe time="1.0" localPosition="0,0" easingMode="SmoothStep5"/>
+      <Keyframe time="1.5" localPosition="0,-16" easingMode="SmoothStep5"/>
+      <Keyframe time="2.0" localPosition="0,0" easingMode="SmoothStep5"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="TeleportInBig" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Boss2Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time="0.0" scale="1.0, 1.0" color="255,255,255,255" easingMode="Elastic" spriteCoords= "0,0"/>
+      <Keyframe time="0.4" scale="2.0, 2.0" color="236,1,106,255" easingMode="Elastic" spriteCoords= "0,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="FadeOut" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" color="236,1,106,255" easingMode="SmoothStep5"/>
+      <Keyframe time="0.5" color="236,1,106,0" easingMode="SmoothStep5"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss3FadeIn" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" color="103,210,243,0" easingMode="SmoothStep5"/>
+      <Keyframe time="0.4" color="103,210,243,255" easingMode="SmoothStep5"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="WiggleFast" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" color="103,210,243,255" easingMode="SmoothStep5"/>
+      <Keyframe time="0.05" color="236,1,106,255" easingMode="SmoothStep5"/>
+      <Keyframe time="0.1" color="103,210,243,255" easingMode="SmoothStep5"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" localPosition="0,0" easingMode="SmoothStep5"/>
+      <Keyframe time="0.05" localPosition="0,3" easingMode="SmoothStep5"/>
+      <Keyframe time="0.1"  localPosition="0,0" easingMode="SmoothStep5"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" scale="1,1" easingMode="Elastic"/>
+      <Keyframe time="0.05" scale="1.1,1.1" easingMode="SmoothStep5"/>
+      <Keyframe time="0.1"  scale="1,1" easingMode="SmoothStep5"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Wiggle" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" color="103,210,243,255" easingMode="SmoothStep5"/>
+      <Keyframe time="0.1" color="236,1,106,255" easingMode="SmoothStep5"/>
+      <Keyframe time="0.2" color="103,210,243,255" easingMode="SmoothStep5"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" localPosition="0,0" easingMode="SmoothStep5"/>
+      <Keyframe time="0.1" localPosition="0,3" easingMode="SmoothStep5"/>
+      <Keyframe time="0.2"  localPosition="0,0" easingMode="SmoothStep5"/>
+
+    </Track>
+    <Track>
+      <Keyframe time="0.0" scale="1,1" easingMode="Elastic"/>
+      <Keyframe time="0.1" scale="1.1,1.1" easingMode="SmoothStep5"/>
+      <Keyframe time="0.2"  scale="1,1" easingMode="SmoothStep5"/>
+    </Track>
+    <Track spriteSheet="Data/Images/Boss3Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time="0.0" easingMode="SmoothStep5"/>
+      <Keyframe time="0.2"  spriteCoords="0,0" easingMode="SmoothStep5"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SpawnBoss3Box" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep3" color="236,1,106,0"/>
+      <Keyframe time=".25" easingMode="SmoothStep3" color="236,1,106,100"/>
+      <Keyframe time=".75" easingMode="SmoothStep3" color="236,1,106,100"/>
+      <Keyframe time=".76" easingMode="SmoothStep3" color="255,255,255,255"/>
+      <Keyframe time="1.0" easingMode="SmoothStep3" color="255,255,255,255"/>
+      <Keyframe time="1.25" easingMode="SmoothStep3" color="236,1,106,255"/>
+    </Track>
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep3" scale="1,1"/>
+      <Keyframe time=".75" easingMode="SmoothStep5" scale="1,1"/>
+      <Keyframe time="1.0" easingMode="SmoothStep5" scale="1.4,1.4"/>
+      <Keyframe time="1.25" easingMode="SmoothStep5" scale="1.0,1.0"/>
+    </Track>
+  </AnimationDefinition>
+  
+  <AnimationDefinition name="ScaleUpALittle" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep3" scale="1,1"/>
+      <Keyframe time=".1" easingMode="SmoothStep3" scale="1,1"/>
+      <Keyframe time=".4" easingMode="SmoothStep3" scale="2.0, 2.0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SpikeBulletRiseUp" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStart3" scale=".1,.1"/>
+      <Keyframe time=".1" easingMode="SmoothStart3" scale=".1,.1"/>
+      <Keyframe time="2.0" easingMode="SmoothStart3" scale="1.0, 1.0"/>
+    </Track>
+  </AnimationDefinition>
+  
+  <AnimationDefinition name="RotateAway" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStart4" rotation="0" localPosition="0,0" scale="1.0,1.0"/>
+      <Keyframe time="0.2" easingMode="SmoothStart4" rotation="0" localPosition="0,0" scale="1.0,1.0"/>
+      <Keyframe time="0.48387" easingMode="SmoothStart4" rotation="-90" localPosition="80,0" scale="1.25,1.25"/>
+      <Keyframe time="0.68387" easingMode="SmoothStart4" rotation="-90" localPosition="80,0" scale="1.25,1.25"/>
+      <Keyframe time="0.96774" easingMode="SmoothStart4" rotation="-180" localPosition="160,0" scale="1.5,1.5"/>
+      <Keyframe time="1.16774" easingMode="SmoothStart4" rotation="-180" localPosition="160,0" scale="1.5,1.5"/>
+      <Keyframe time="1.45161" easingMode="SmoothStart4" rotation="-270" localPosition="240,0" scale="1.75,1.75"/>
+      <Keyframe time="1.65161" easingMode="SmoothStart4" rotation="-270" localPosition="240,0" scale="1.75,1.75"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="BigCircleParticleSpawn" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStep5" scale="0.1,0.1"/>
+      <Keyframe time="0.5" easingMode="SmoothStep5" scale="1.0,1.0"/>
+      <Keyframe time="1.0" easingMode="SmoothStep5" scale="0.1,0.1"/>
+    </Track>
+
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss3ShootSaws" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Boss3Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time="0.0" easingMode="SmoothStart4" scale="1.0,1.0" spriteCoords="3,0" color="236,1,106,255"/>
+      <Keyframe time="0.48387" easingMode="SmoothStart4" scale="1.0,1.0" spriteCoords="3,0" color="236,1,106,255"/>
+      <Keyframe time="0.96774" easingMode="SmoothStep5" scale="1.25,1.25" spriteCoords="3,0" color="236,1,106,255"/>
+      <Keyframe time="1.06774" easingMode="SmoothStep5" scale=".75,.75" spriteCoords="3,0" color="236,1,106,255"/>
+      <Keyframe time="1.3" easingMode="SmoothStart4" scale="3.0,3.0" spriteCoords="3,0" color="236,1,106,255"/>
+      <Keyframe time="1.45161" easingMode="SmoothStep5" scale="1.0,1.0" spriteCoords="3,0" color="236,1,106,255"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SawBladeSpawnLeft" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStart4" scale="0.0,0.0"/>
+      <Keyframe time="0.38387" easingMode="SmoothStep5" scale="1.2,1.2"/>
+      <Keyframe time="0.48387" easingMode="SmoothStep5" scale="1.0,1.0"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" easingMode="Elastic" localPosition="0.0,0.0"/>
+      <Keyframe time="0.48387" easingMode="Elastic" localPosition="0.0,0.0"/>
+      <Keyframe time="0.68387" easingMode="Elastic" localPosition="0.0,0.0"/>
+      <Keyframe time="0.96774" easingMode="SmoothStart4" localPosition="-48.0,0.0"/>
+      <Keyframe time="1.06774" easingMode="SmoothStart4" localPosition="-48.0,0.0"/>
+      <Keyframe time="1.45161" easingMode="SmoothStart4" localPosition="-185.0,0.0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SawBladeSpawnRight" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStart4" scale="0.0,0.0"/>
+      <Keyframe time="0.38387" easingMode="SmoothStep5" scale="1.2,1.2"/>
+      <Keyframe time="0.48387" easingMode="SmoothStep5" scale="1.0,1.0"/>    
+    </Track>
+    <Track>
+      <Keyframe time="0.0" easingMode="Elastic" localPosition="0.0,0.0"/>
+      <Keyframe time="0.48387" easingMode="Elastic" localPosition="0.0,0.0"/>
+      <Keyframe time="0.68387" easingMode="Elastic" localPosition="0.0,0.0"/>
+      <Keyframe time="0.96774" easingMode="SmoothStart4" localPosition="48.0,0.0"/>
+      <Keyframe time="1.06774" easingMode="SmoothStart4" localPosition="48.0,0.0"/>
+      <Keyframe time="1.45161" easingMode="SmoothStart4" localPosition="185.0,0.0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SawBladeSpawnUp" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStart4" scale="0.0,0.0"/>
+      <Keyframe time="0.38387" easingMode="SmoothStep5" scale="1.2,1.2"/>
+      <Keyframe time="0.48387" easingMode="SmoothStep5" scale="1.0,1.0"/>    
+    </Track>
+    <Track>
+      <Keyframe time="0.0" easingMode="Elastic" localPosition="0.0,0.0"/>
+      <Keyframe time="0.48387" easingMode="Elastic" localPosition="0.0,0.0"/>
+      <Keyframe time="0.68387" easingMode="Elastic" localPosition="0.0,0.0"/>
+      <Keyframe time="0.96774" easingMode="SmoothStart4" localPosition="0.0,48.0"/>
+      <Keyframe time="1.06774" easingMode="SmoothStart4" localPosition="0.0,48.0"/>
+      <Keyframe time="1.45161" easingMode="SmoothStart4" localPosition="0.0,107"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SawBladeSpawnDown" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStart4" scale="0.0,0.0"/>
+      <Keyframe time="0.38387" easingMode="SmoothStep5" scale="1.2,1.2"/>
+      <Keyframe time="0.48387" easingMode="SmoothStep5" scale="1.0,1.0"/>    
+    </Track>
+    <Track>
+      <Keyframe time="0.0" easingMode="Elastic" localPosition="0.0,0.0"/>
+      <Keyframe time="0.48387" easingMode="Elastic" localPosition="0.0,0.0"/>
+      <Keyframe time="0.68387" easingMode="Elastic" localPosition="0.0,0.0"/>
+      <Keyframe time="0.96774" easingMode="SmoothStart4" localPosition="0.0,-48.0"/>
+      <Keyframe time="1.06774" easingMode="SmoothStart4" localPosition="0.0,-48.0"/>
+      <Keyframe time="1.45161" easingMode="SmoothStart4" localPosition="0.0,-107"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss3FallDown" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStep5" localPosition="0,0"/>
+      <Keyframe time="0.48387" easingMode="SmoothStart4" localPosition="0,64"/>
+      <Keyframe time="0.96774" easingMode="SmoothStep5" localPosition="0,-100"/>
+      <Keyframe time="1.16774" easingMode="SmoothStart4" localPosition="0,-100"/>
+      <Keyframe time="1.45161" easingMode="SmoothStart4" localPosition="0,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss3Shake" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStop3" scale="1,1"/>
+      <Keyframe time="1.0" easingMode="SmoothStart3" scale="2.0,2.0"/>
+      <Keyframe time="1.5" easingMode="SmoothStart3" scale="1.0,1.0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="Boss3FlyIn" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStop2" localPosition="-200,0" scale="1,1"/>
+      <Keyframe time="0.48387" easingMode="SmoothStart4" localPosition="70,0" scale="1,1"/>
+      <Keyframe time="0.96774" easingMode="SmoothStart3" localPosition="0,0" scale="1,1"/>
+    </Track>
+    <Track spriteSheet="Data/Images/Boss3Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time="0.0" easingMode="SmoothStop2" rotation="0" spriteCoords="5,0" color="103, 210, 243"/>
+      <Keyframe time="0.48387" easingMode="SmoothStart3" rotation="-420" spriteCoords="5,0" color="103, 210, 243"/>
+      <Keyframe time="0.96774" easingMode="SmoothStart3" rotation="-360" spriteCoords="5,0" color="103, 210, 243"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SpawnConeHazardFast" playbackMode="Once">
+    <Track>
+      <Keyframe time=".0" easingMode="SmoothStep3" color="236,1,106,0"/>
+      <Keyframe time=".125" easingMode="SmoothStep3" color="236,1,106,100"/>
+      <Keyframe time=".35" easingMode="SmoothStep3" color="236,1,106,100"/>
+      <Keyframe time=".4" easingMode="SmoothStep3" color="255,255,255,255"/>
+      <Keyframe time=".425" easingMode="SmoothStep3" color="236,1,106,100"/>
+      <Keyframe time=".5" easingMode="SmoothStep3" color="236,1,106,0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="HeartBeat" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStart4" localPosition="0,0" scale="0,0"/>
+      <Keyframe time="0.15" easingMode="SmoothStart4" localPosition="-148,0" scale="1,1"/>
+      <Keyframe time="0.28387" easingMode="SmoothStart4" localPosition="-148,0" scale="1,1"/>
+      <Keyframe time="0.48387" easingMode="SmoothStart4" localPosition="0,0" scale="0,0"/>
+
+      <Keyframe time="0.63387" easingMode="SmoothStart4" localPosition="-148,0" scale="1,1"/>
+      <Keyframe time="0.76774" easingMode="SmoothStart4" localPosition="-148,0" scale="1,1"/>
+      <Keyframe time="0.96774" easingMode="SmoothStart4" localPosition="0,0" scale="0,0"/>
+
+      <Keyframe time="1.10161" easingMode="SmoothStart4" localPosition="-148,0" scale="1,1"/>
+      <Keyframe time="1.25161" easingMode="SmoothStart4" localPosition="-148,0" scale="1,1"/>
+      <Keyframe time="1.45161" easingMode="SmoothStart4" localPosition="0,0" scale="0,0"/>
+    </Track>
+    
+    <Track>
+      <Keyframe time="0.15" easingMode="SmoothStep5" rotation="0"/>
+      <Keyframe time="0.28387" easingMode="SmoothStep5" rotation="15"/>
+      <Keyframe time="0.48387" easingMode="SmoothStep5" rotation="0"/>
+
+      <Keyframe time="0.63387" easingMode="SmoothStep5" rotation="0"/>
+      <Keyframe time="0.76774" easingMode="SmoothStep5" rotation="-15"/>
+      <Keyframe time="0.96774" easingMode="SmoothStep5" rotation="0"/>
+
+      <Keyframe time="1.10161" easingMode="SmoothStep5" rotation="0"/>
+      <Keyframe time="1.25161" easingMode="SmoothStep5" rotation="15"/>
+      <Keyframe time="1.45161" easingMode="SmoothStep5" rotation="0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="PreArms" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Boss3Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time="0.0" easingMode="SmoothStep3" spriteCoords="0,0" color="103, 210, 243"/>
+      <Keyframe time="0.24" easingMode="SmoothStep3" spriteCoords="0,0" color="255, 255, 255"/>
+      <Keyframe time="0.48" easingMode="SmoothStep3" spriteCoords="0,0" color="103, 210, 243"/>
+      <Keyframe time="0.72" easingMode="SmoothStep3" spriteCoords="0,0" color="255, 255, 255"/>
+      <Keyframe time="0.96" easingMode="SmoothStep3" spriteCoords="0,0" color="103, 210, 243"/>
+
+    </Track>
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStep3" localPosition="0,0"  rotation="0"/>
+      <Keyframe time="0.24" easingMode="SmoothStep3" localPosition="0,16" rotation="-10"/>
+      <Keyframe time="0.48" easingMode="SmoothStep3" localPosition="0,0"  rotation="0"/>
+      <Keyframe time="0.72" easingMode="SmoothStep3" localPosition="0,16" rotation="-10"/>
+      <Keyframe time="0.96" easingMode="SmoothStep3" localPosition="0,0" rotation="0"/>
+    </Track>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="SadBoySequence" playbackMode="Once">
+    <Track spriteSheet="Data/Images/Boss3Sheet.png" spriteSheetDimensions="14,14">
+      <Keyframe time="0.0" easingMode="SmoothStep3" spriteCoords="0,0" color="103, 210, 243"/>
+      <Keyframe time="12.0" easingMode="SmoothStep3" spriteCoords="4,0" color="103, 210, 243"/>
+      <Keyframe time="12.1" easingMode="SmoothStep3" spriteCoords="4,0" color="103, 210, 243"/>
+    </Track>
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStart3" localPosition="0,0" rotation="0"/>
+      <Keyframe time="0.48" easingMode="SmoothStep3" localPosition="0,-100" rotation="60"/>
+      <Keyframe time="0.58" easingMode="SmoothStep3" localPosition="0,-90" rotation="80"/>
+      <Keyframe time="0.68" easingMode="SmoothStart3" localPosition="0,-100" rotation="90"/>
+      <Keyframe time="1.0" easingMode="SmoothStart3" localPosition="0,-100" rotation="90"/>
+      
+      <Keyframe time="1.3" easingMode="SmoothStart3" localPosition="-10,-94" rotation="60"/>
+      <Keyframe time="1.6" easingMode="SmoothStop3" localPosition="-10,-100" rotation="90"/>
+      <Keyframe time="1.9" easingMode="SmoothStop3" localPosition="-10,-100" rotation="90"/>
+      <Keyframe time="2.2" easingMode="SmoothStart3" localPosition="-10,-100" rotation="90"/>
+      
+      <Keyframe time="2.5" easingMode="SmoothStart3" localPosition="-10,-100" rotation="90"/>
+      <Keyframe time="2.8" easingMode="SmoothStop3" localPosition="-20,-94" rotation="60"/>
+      <Keyframe time="3.1" easingMode="SmoothStop3" localPosition="-20,-94" rotation="60"/>
+      <Keyframe time="3.4" easingMode="SmoothStart3" localPosition="-20,-100" rotation="90"/>
+
+      <Keyframe time="3.8" easingMode="SmoothStart3" localPosition="-20,-100" rotation="90"/>
+      <Keyframe time="4.1" easingMode="SmoothStop3" localPosition="-30,-94" rotation="60"/>
+      <Keyframe time="4.4" easingMode="SmoothStop3" localPosition="-30,-94" rotation="60"/>
+      <Keyframe time="4.7" easingMode="SmoothStart3" localPosition="-30,-100" rotation="90"/>
+
+      <Keyframe time="5.1" easingMode="SmoothStart3" localPosition="-30,-100" rotation="90"/>
+      <Keyframe time="5.4" easingMode="SmoothStop3" localPosition="-40,-94" rotation="60"/>
+      <Keyframe time="5.7" easingMode="SmoothStop3" localPosition="-40,-94" rotation="60"/>
+      <Keyframe time="6.0" easingMode="SmoothStart3" localPosition="-40,-100" rotation="90"/>
+
+      <Keyframe time="6.5" easingMode="SmoothStart3" localPosition="-40,-100" rotation="90"/>
+      <Keyframe time="6.8" easingMode="SmoothStop3" localPosition="-50,-94" rotation="60"/>
+      <Keyframe time="7.1" easingMode="SmoothStop3" localPosition="-50,-94" rotation="60"/>
+      <Keyframe time="7.4" easingMode="SmoothStart3" localPosition="-50,-100" rotation="90"/>
+
+      <Keyframe time="7.9" easingMode="SmoothStart3" localPosition="-50,-100" rotation="90"/>
+      <Keyframe time="8.0" easingMode="SmoothStart3" localPosition="-52,-100" rotation="83"/>
+      <Keyframe time="8.1" easingMode="SmoothStart3" localPosition="-52,-100" rotation="90"/>
+
+      <Keyframe time="9.0" easingMode="SmoothStart3" localPosition="-52,-100" rotation="90"/>
+      <Keyframe time="9.5" easingMode="SmoothStart3" localPosition="-80,-80" rotation="45"/>
+      <Keyframe time="9.55" easingMode="SmoothStart3" localPosition="-80,-80" rotation="40"/>
+      <Keyframe time="9.65" easingMode="SmoothStart3" localPosition="-80,-80" rotation="50"/>
+      <Keyframe time="9.7" easingMode="SmoothStart3" localPosition="-80,-80" rotation="45"/>
+      <Keyframe time="10.5" easingMode="SmoothStart3" localPosition="-80,-80" rotation="45"/>
+      <Keyframe time="13.0" easingMode="SmoothStart3" localPosition="-80,-80" rotation="45"/>
+      <Keyframe time="15.0" easingMode="SmoothStart3" localPosition="0,0" rotation="0"/>
+
+    </Track>
+  </AnimationDefinition>
+  
+  <AnimationDefinition name="Boss3Outro" playbackMode="Once">
+    <Track>
+      <Keyframe time="0.0" easingMode="SmoothStep3" scale="1,1" color="103, 210, 243, 255"/>
+      <Keyframe time="0.05" easingMode="SmoothStep3" scale="1,1" color="103, 210, 243, 255"/>
+      <Keyframe time="1.0" easingMode="SmoothStep3" scale=".25,25" color="103, 210, 243, 0"/>
+    </Track>
+  </AnimationDefinition>
+
+</AnimationDefinitions>

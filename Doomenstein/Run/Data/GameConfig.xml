@@ -1,0 +1,14 @@
+<GameConfig
+	defaultMap="Map1"
+  musicVolume="0.1"
+  mainMenuMusic="Data/Audio/Music/MainMenu_InTheDark.mp2"
+  gameMusic="Data/Audio/Music/Amesbury Dr.m4a"
+  buttonClickSound="Data/Audio/Click.mp3"
+	windowAspect="2.0"
+  screenWidth="1600"
+  screenHeight="800"
+/>
+<!--
+	defaultMap="MPMap"
+ -->
+

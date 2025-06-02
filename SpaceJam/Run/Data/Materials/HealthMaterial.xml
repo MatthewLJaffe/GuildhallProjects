@@ -1,0 +1,10 @@
+<Material
+  name="Health"
+  shader="Data/Shaders/Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Images/health_BaseColor.png"
+  normalTexture="Data/Images/battery_Normal.png"
+  specGlossEmitTexture="Data/Images/health_SpecGlossEmit.png"
+
+  color="255,255,255,255"
+/>

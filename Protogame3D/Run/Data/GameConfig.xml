@@ -1,0 +1,39 @@
+<GameConfig
+  windowTitle="Protogame3D"
+  engineDataPath="../../Engine/Data"
+  readInPrecompiledShaders="true"
+  writeOutCompiledShaders="false"
+/>
+
+<!--
+  windowAspect="2.0"
+  windowFullscreen="true"
+  windowSize="1600,800"
+  windowSize="2400,650"
+  windowPosition="35,35"
+  windowSize="2400,1200"
+  windowPosition="35,35"
+  windowPosition="35,725"
+  windowSize="1900,1100"
+  windowPosition="35,35"
+  windowSize="1500,500"
+  windowPosition="35,35"
+  windowPosition="35,550"
+  defaultMap="Grid4x4"
+  defaultMap="Grid4x4"
+  defaultMap="Grid12x12"
+-->
+
+<!--
+  windowTitle="Vaporum Client"
+  windowSize="1500,500"
+  windowPosition="35,575"
+  netMode="Client"
+-->
+
+<!--
+  windowTitle="Vaporum Server"
+  windowSize="1500,500"
+  windowPosition="35,35"
+  netMode="Server"
+-->

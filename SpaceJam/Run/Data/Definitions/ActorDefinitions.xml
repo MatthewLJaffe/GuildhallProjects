@@ -1,0 +1,303 @@
+    <ActorDefinitions>
+
+    <ActorDefinition name="Player" faction="Player" type="Player">
+    <Life health="100" damageable="true" overlapDamage="0" lifetime="-1"/>
+    <Physics collisionType="Sphere" colliderSphereRadius="1.5" collidesWithFaction="true"/>
+    <Death deathTime="2">
+        <DieParticleEffect dieParticleEffectPath="Data/Saves/ParticleEffects/PlayerShipExplosion.xml" dieParticleEffectDuration="2" orientDieParticleEffect="true"/>
+    </Death>
+    </ActorDefinition>
+  
+    <ActorDefinition name="Bob" faction="Enemy" maxTargetAngle="5">
+    <Life health="3" damageable="true" overlapDamage="0" lifetime="-1"/>
+    <Death deathTime="0" dieOnOverlap="false">
+        <DieParticleEffect dieParticleEffectPath="Data/Saves/ParticleEffects/BobShipExplosion.xml" dieParticleEffectDuration="2" orientDieParticleEffect="true"/>
+    </Death>
+    <Physics collisionType="Sphere" colliderSphereRadius="1.5" colliderAABB3Mins="0,0,0"  colliderAABB3Maxs="0,0,0" collidesWithFaction="true"/>
+    <Appearance modelFilePath="Data/Models/Ships/BobRedModel.xml">
+    </Appearance>
+    <Sounds>
+        <Sound sound="Hurt" name="Data/Audio/Hit_Hurt.mp3" volume=".2"/>
+        <Sound sound="Die" name="Data/Audio/EnemyDied.mp3" volume=".15"/>
+    </Sounds>
+    </ActorDefinition>
+
+    <ActorDefinition name="LaserPlayer" faction="Player">
+    <Life overlapDamage="1.f" lifetime="2.f"/>
+    <Death deathTime="0" dieOnOverlap="true">
+        <DieParticleEffect dieParticleEffectPath="Data/Saves/ParticleEffects/BlueLaserHitSparks.xml" dieParticleEffectDuration="1" orientDieParticleEffect="true"/>
+    </Death>
+    <Physics collisionType="AABB3" colliderSphereRadius="0.f" colliderAABB3Mins="-1,-.5,-.5" colliderAABB3Maxs="1,.5,.5" collidesWithFaction="false" isTrigger="true"/>
+    <Appearance>
+        <OwnedParticleEffects>
+        <OwnedParticleEffect path="Data/Saves/ParticleEffects/SmallLaserBeamBlue.xml"/>
+        </OwnedParticleEffects>
+    </Appearance>
+    </ActorDefinition>
+
+    <ActorDefinition name="LaserEnemy" faction="Enemy">
+	    <Life overlapDamage="1.f" lifetime="2.f"/>
+	    <Death deathTime="0" dieOnOverlap="true">
+		    <DieParticleEffect dieParticleEffectPath="Data/Saves/ParticleEffects/RedLaserHitSparks.xml" dieParticleEffectDuration="1" orientDieParticleEffect="true"/>
+	    </Death>
+	    <Physics collisionType="AABB3" colliderSphereRadius="0.f" colliderAABB3Mins="-1,-.5,-.5" colliderAABB3Maxs="1,.5,.5" collidesWithFaction="false" isTrigger="true"/>
+	    <Appearance>
+		    <OwnedParticleEffects>
+			    <OwnedParticleEffect path="Data/Saves/ParticleEffects/SmallLaserBeamRed.xml"/>
+		    </OwnedParticleEffects>
+	    </Appearance>
+    </ActorDefinition>
+
+    <ActorDefinition name="MissilePlayer" faction="Player" bezierPath="true">
+    <Life overlapDamage="0.f" lifetime="1.8462f"/>
+    <Death deathTime="0" dieOnOverlap="true">
+        <DieParticleEffect dieParticleEffectPath="Data/Saves/ParticleEffects/SmallEnergyExplosion.xml" dieParticleEffectDuration="1" orientDieParticleEffect="true"/>
+        <DieActorSpawn name="PlayerMissileHitbox"/>
+    </Death>
+    <Physics collisionType="AABB3" colliderSphereRadius="0.f" colliderAABB3Mins="-1,-.5,-.5" colliderAABB3Maxs="1,.5,.5" collidesWithFaction="false" isTrigger="true"/>
+    <Appearance modelFilePath="Data/Models/Missile.xml">
+        <OwnedParticleEffects>
+        <OwnedParticleEffect path="Data/Saves/ParticleEffects/MissileTrail.xml"/>
+        </OwnedParticleEffects>
+    </Appearance>
+    </ActorDefinition>
+
+    <ActorDefinition name="Thrall" type="Thrall" faction="Enemy" maxTargetAngle="5">
+    <Life health="3" damageable="true" overlapDamage="0" lifetime="-1"/>
+    <Death deathTime="0" dieOnOverlap="false">
+        <DieParticleEffect dieParticleEffectPath="Data/Saves/ParticleEffects/BobShipExplosion.xml" dieParticleEffectDuration="2" orientDieParticleEffect="true"/>
+        <DieActorSpawn name="EnemyExplodeHitbox"/>
+    </Death>
+    <Physics collisionType="Sphere" colliderSphereRadius="1.5" colliderAABB3Mins="0,0,0"  colliderAABB3Maxs="0,0,0" collidesWithFaction="true" acceleration="20" maxSpeed="10.5"/>
+    <Appearance modelFilePath="Data/Models/Ships/BobRedModel.xml">
+    </Appearance>
+    <Sounds>
+        <Sound sound="Hurt" name="Data/Audio/Hit_Hurt.mp3" volume=".2"/>
+        <Sound sound="Die" name="Data/Audio/EnemyDied.mp3" volume=".15"/>
+    </Sounds>
+    <Behaviours>
+        <Behaviour name="ThallChasePlayer" type="AIBehaviour" default="true">
+            <SteeringBehaviours>
+                <SteeringBehaviour type="ChasePlayerSB" weight=".5" strafe="false"/>
+                <SteeringBehaviour type="AvoidObstaclesSB" weight=".5" strafe="false"/>
+            </SteeringBehaviours>
+            <Transitions>
+                <Transition minDistance="5" nextBehaviour="Explode"/>
+            </Transitions>
+        </Behaviour>
+            <Behaviour name="Explode" type="ExplodeBehaviour">
+        </Behaviour>
+    </Behaviours>
+    </ActorDefinition>
+
+    <ActorDefinition name="Gunner" faction="Enemy" maxTargetAngle="5">
+    <Life health="3" damageable="true" overlapDamage="0" lifetime="-1"/>
+    <Death deathTime="0" dieOnOverlap="false">
+        <DieParticleEffect dieParticleEffectPath="Data/Saves/ParticleEffects/BobShipExplosion.xml" dieParticleEffectDuration="2" orientDieParticleEffect="true"/>
+		<DieActorSpawn name="HealthPickup" chance=".1"/>
+	</Death>
+    <Physics collisionType="Sphere" colliderSphereRadius="1.5" colliderAABB3Mins="0,0,0"  colliderAABB3Maxs="0,0,0" collidesWithFaction="true" acceleration="20" maxSpeed="8"/>
+    <Appearance modelFilePath="Data/Models/Ships/ExecutionerRedModel.xml" faceVelocity="true">
+    </Appearance>
+    <Sounds>
+        <Sound sound="Hurt" name="Data/Audio/Hit_Hurt.mp3" volume=".2"/>
+        <Sound sound="Die" name="Data/Audio/EnemyDied.mp3" volume=".15"/>
+    </Sounds>
+    <Behaviours>
+
+        <Behaviour name="GunnerChasePlayer" type="AIBehaviour" default="true" maxSpeed="11">
+        <SteeringBehaviours>
+            <SteeringBehaviour type="ChasePlayerSB" weight=".6" strafe="false"/>
+            <SteeringBehaviour type="AvoidObstaclesSB" weight=".4" strafe="true"/>
+        </SteeringBehaviours>
+        <Transitions>
+            <Transition minDistance="25" nextBehaviour="GunnerAttack"/>
+        </Transitions>
+        </Behaviour>
+
+        <Behaviour name="GunnerAttack" type="GunnerAttackBehaviour" default="false" maxSpeed="5">
+        <SteeringBehaviours>
+            <SteeringBehaviour type="CirclePlayerSB" weight=".5" strafe="true"/>
+            <SteeringBehaviour type="AvoidObstaclesSB" weight=".4" strafe="true"/>
+            <SteeringBehaviour type="ChasePlayerSB" weight=".1" strafe="false"/>
+        </SteeringBehaviours>
+        <Transitions>
+            <Transition minDistance="15" nextBehaviour="GunnerRetreat"/>
+            <Transition maxDistance="35" nextBehaviour="GunnerChasePlayer"/>
+        </Transitions>
+        </Behaviour>
+
+        <Behaviour name="GunnerRetreat" type="AIBehaviour" default="false" maxSpeed="8">
+        <SteeringBehaviours>
+		    <SteeringBehaviour type="AvoidObstaclesSB" weight="0.4" strafe="true"/>
+		    <SteeringBehaviour type="ChasePlayerSB" weight="-0.5" strafe="false"/>
+		    <SteeringBehaviour type="LeftSB" weight="0.1" strafe="false"/>
+
+	    </SteeringBehaviours>
+        <Transitions>
+            <Transition maxDistance="25" nextBehaviour="GunnerAttack"/>
+        </Transitions>
+        </Behaviour>
+      
+        <Behaviour name="TurnAroundRetreat" type="TurnAroundBehaviour">
+        <Transitions>
+            <Transition duration="1" nextBehaviour="GunnerRetreat"/>
+        </Transitions>
+        </Behaviour>
+
+        <Behaviour name="TurnAroundAttack" type="TurnAroundBehaviour">
+        <Transitions>
+            <Transition duration="1" nextBehaviour="GunnerAttack"/>
+        </Transitions>
+        </Behaviour>
+    </Behaviours>
+    </ActorDefinition>
+
+    <ActorDefinition name="Artillery" faction="Enemy" maxTargetAngle="5">
+	    <Life health="8" damageable="true" overlapDamage="0" lifetime="-1"/>
+	    <Death deathTime="0" dieOnOverlap="false">
+		    <DieParticleEffect dieParticleEffectPath="Data/Saves/ParticleEffects/BobShipExplosion.xml" dieParticleEffectDuration="2" orientDieParticleEffect="true"/>
+			<DieActorSpawn name="MissilePickup"/>
+		</Death>
+	    <Physics collisionType="Sphere" colliderSphereRadius="1.5" colliderAABB3Mins="0,0,0"  colliderAABB3Maxs="0,0,0" collidesWithFaction="true" acceleration="20" maxSpeed="8"/>
+	    <Appearance modelFilePath="Data/Models/Ships/PancakeRedModel.xml" facePlayer="true">
+	    </Appearance>
+	    <Sounds>
+		    <Sound sound="Hurt" name="Data/Audio/Hit_Hurt.mp3" volume=".2"/>
+		    <Sound sound="Die" name="Data/Audio/EnemyDied.mp3" volume=".15"/>
+	    </Sounds>
+	    <Behaviours>
+
+		    <Behaviour name="ArtilleryChasePlayer" type="AIBehaviour" default="true" maxSpeed="11">
+			    <SteeringBehaviours>
+				    <SteeringBehaviour type="ChasePlayerSB" weight=".6"/>
+				    <SteeringBehaviour type="AvoidObstaclesSB" weight=".4"/>
+			    </SteeringBehaviours>
+			    <Transitions>
+				    <Transition minDistance="60" nextBehaviour="ArtilleryAttack"/>
+			    </Transitions>
+		    </Behaviour>
+
+		    <Behaviour name="ArtilleryAttack" type="ArtilleryAttackBehaviour" default="false" maxSpeed="0">
+			    <SteeringBehaviours>
+				    <SteeringBehaviour type="CirclePlayerSB" weight=".5"/>
+				    <SteeringBehaviour type="AvoidObstaclesSB" weight=".4"/>
+				    <SteeringBehaviour type="ChasePlayerSB" weight=".1"/>
+			    </SteeringBehaviours>
+			    <Transitions>
+				    <Transition minDistance="25" nextBehaviour="ArtilleryRetreat"/>
+				    <Transition maxDistance="75" nextBehaviour="ArtilleryChasePlayer"/>
+			    </Transitions>
+		    </Behaviour>
+
+		    <Behaviour name="ArtilleryRetreat" type="AIBehaviour" default="false" maxSpeed="8">
+			    <SteeringBehaviours>
+				    <SteeringBehaviour type="AvoidObstaclesSB" weight="0.3"/>
+				    <SteeringBehaviour type="ChasePlayerSB" weight="-0.5"/>
+				    <SteeringBehaviour type="CirclePlayerSB" weight="0.2"/>
+			    </SteeringBehaviours>
+			    <Transitions>
+				    <Transition maxDistance="50" nextBehaviour="ArtilleryAttack"/>
+			    </Transitions>
+		    </Behaviour>
+			
+	    </Behaviours>
+    </ActorDefinition>
+
+	<ActorDefinition name="ArtilleryShell" faction="Enemy">
+		<Appearance modelFilePath="Data/Models/Missile.xml">
+			<OwnedParticleEffects>
+				<OwnedParticleEffect path="Data/Saves/ParticleEffects/MissileTrail.xml"/>
+			</OwnedParticleEffects>
+		</Appearance>
+	</ActorDefinition>
+
+    <ActorDefinition name="ArtilleryWarnZone" faction="Enemy">
+	    <Appearance meshType="ArtilleryWarnZone"/>
+	    <Death deathTime="0">
+			<Sound sound="Die" name="Data/Audio/EnemyDied.mp3" volume=".15"/>
+			<DieParticleEffect dieParticleEffectPath="Data/Saves/ParticleEffects/Explosion.xml" dieParticleEffectDuration="2"/>
+		    <DieActorSpawn name="ArtilleryExplodeHitbox"/>
+	    </Death>
+    </ActorDefinition>
+
+    <ActorDefinition name="ArtilleryExplodeHitbox" faction="Enemy" collidesWithFaction="true">
+	    <Life overlapDamage="10.f" lifetime="1.f"/>
+	    <Death deathTime="0" dieOnOverlap="true">
+	    </Death>
+	    <Physics collisionType="AABB3" colliderAABB3Mins="-4,-4,-4" colliderAABB3Maxs="4,4,4" collidesWithFaction="false" isTrigger="true"/>
+    </ActorDefinition>
+
+	<ActorDefinition name="Imperial" faction="Enemy" maxTargetAngle="8">
+		<Life health="20" damageable="true" overlapDamage="0" lifetime="-1"/>
+		<Death deathTime="0" dieOnOverlap="false">
+			<DieParticleEffect dieParticleEffectPath="Data/Saves/ParticleEffects/ImperealShipExplosion.xml" dieParticleEffectDuration="5" orientDieParticleEffect="true"/>
+			<DieActorSpawn name="Battery"/>
+		</Death>
+		<Physics collisionType="AABB3" colliderAABB3Mins="-24,-7,-1.5"  colliderAABB3Maxs="14,7,4.5" collidesWithFaction="true" debugDrawCollider="false" acceleration="4" maxSpeed="8"/>
+		<Appearance modelFilePath="Data/Models/Ships/ImperialRedModel.xml">
+		</Appearance>
+		<Sounds>
+			<Sound sound="Hurt" name="Data/Audio/Hit_Hurt.mp3" volume=".2"/>
+			<Sound sound="Die" name="Data/Audio/EnemyDied.mp3" volume=".15"/>
+		</Sounds>
+		<Behaviours>
+			<Behaviour name="ImperialDefault" type="ImperialDefaultBehaviour" default="true" maxSpeed="0">
+			</Behaviour>
+		</Behaviours>
+	</ActorDefinition>
+		<ActorDefinition name="EnemyExplodeHitbox" faction="Enemy">
+        <Life overlapDamage="10.f" lifetime="1.f"/>
+        <Death deathTime="0" dieOnOverlap="true">
+        </Death>
+        <Physics collisionType="Sphere" colliderSphereRadius="6.f" collidesWithFaction="true" debugDrawCollider="false" isTrigger="true"/>
+    </ActorDefinition>
+
+    <ActorDefinition name="PlayerMissileHitbox" faction="Player">
+        <Life overlapDamage="4.f" lifetime="0.f"/>
+        <Death deathTime="0">
+        </Death>
+        <Physics collisionType="Sphere" colliderSphereRadius="4.f" collidesWithFaction="false" debugDrawCollider="false" isTrigger="true"/>
+    </ActorDefinition>
+  
+    <ActorDefinition name="SmallAsteroid2C" faction="Neutral">
+        <Physics collisionType="Sphere" colliderSphereRadius="1.2f" collidesWithFaction="true"/>
+        <Appearance modelFilePath="Data/Models/Asteroids/Asteroid_2cModel.xml">
+        </Appearance>
+    </ActorDefinition>
+
+    <ActorDefinition name="BigAsteroid" faction="Neutral">
+        <Physics collisionType="Sphere" colliderSphereRadius="25.f" collidesWithFaction="true" debugDrawCollider="false" static="true"/>
+        <Appearance modelFilePath="Data/Models/Asteroids/BigAsteroidModel.xml">
+        </Appearance>
+    </ActorDefinition>
+
+	<ActorDefinition name="Battery" faction="Neutral">
+		<Physics collisionType="Sphere" colliderSphereRadius="1.5f" collidesWithFaction="true" isTrigger="true" megaLaserAmmoToDrop="5" debugDrawCollider="false"/>
+		<Appearance modelFilePath="Data/Models/BatteryModel.xml" rotationalVelocity="30,10,0">
+			<OwnedParticleEffects>
+				<OwnedParticleEffect path="Data/Saves/ParticleEffects/PickupEffect.xml"/>
+			</OwnedParticleEffects>
+		</Appearance>
+	</ActorDefinition>
+
+	<ActorDefinition name="MissilePickup" faction="Neutral">
+		<Physics collisionType="Sphere" colliderSphereRadius="1.5f" collidesWithFaction="true" isTrigger="true" missileAmmoToDrop="12" debugDrawCollider="false"/>
+		<Appearance modelFilePath="Data/Models/MissilePickupModel.xml" rotationalVelocity="30,10,0">
+			<OwnedParticleEffects>
+				<OwnedParticleEffect path="Data/Saves/ParticleEffects/PickupEffect.xml"/>
+			</OwnedParticleEffects>
+		</Appearance>
+	</ActorDefinition>
+
+	<ActorDefinition name="HealthPickup" faction="Neutral">
+		<Physics collisionType="Sphere" colliderSphereRadius="1.5f" collidesWithFaction="true" isTrigger="true" debugDrawCollider="false" healthToRestore="25"/>
+		<Appearance modelFilePath="Data/Models/HealthModel.xml" rotationalVelocity="30,10,0">
+			<OwnedParticleEffects>
+				<OwnedParticleEffect path="Data/Saves/ParticleEffects/PickupEffect.xml"/>
+			</OwnedParticleEffects>
+		</Appearance>
+	</ActorDefinition>
+ 
+  
+    </ActorDefinitions>

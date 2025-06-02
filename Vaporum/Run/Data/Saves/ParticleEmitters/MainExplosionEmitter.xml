@@ -1,0 +1,81 @@
+<Emitter name="MainExplosion">
+	<Emission emissionRate="10.0" emissionRadius="1.00" boxDimensions="5.000,5.000,2.000" lifetime="0.90, 1.00" emissionType="1" meshFilePath="" meshScale="1.000,1.000,1.000" emissionMode="1" repeat="1" repeatTime="2.00" emitTime="-1.00" numBursts="1" burstInterval="0.100"/>
+	<Physics ignoreWorldPhysics="1" velocityXRange="0.00,0.00" velocityYRange="0.00,0.00" velocityZRange="0.00,0.00" setLifetimeVelocity="0" velocityMode="0" orientToVelocity="0" perlinNoiseForce="0.00"
+	curlNoiseAffectPosition="0" curlNoiseScale="10.00" curlNoiseSampleSize="10.00" curlNoiseOctives="5" curlNoisePan="0.00, 0.00, 0.00"
+	pointForcePosition="0.00,0.00,0.00" pointForceFalloffExponent="2.00" pointForceAttract="true" pointForceRadius="0.00"
+	returnToOriginForce="0.00" returnToOriginDelay="1.00" ignoreForcesWhenAtOrigin="0"
+	vortexAxisDir="1.00,0.00,0.00" vortexAxisOrigin="0.00,0.00,0.00" vortexForceRadius="0.00">
+	</Physics>
+	<Appearance spriteSheetFilePath="Data/Images/Explosion.png" spriteSheetDimensions="6,6" spriteStartIndex="0" spriteEndIndex="35" stretchBillboard="0" lengthPerSpeed="0.10" spriteEasingFunction="0">
+		<ColorOverLife color="255,255,255,255" time="0.00"/>
+		<ColorOverLife color="255,212,72,255" time="0.30"/>
+		<ColorOverLife color="255,137,72,255" time="0.80"/>
+		<ColorOverLife color="100,100,100,0" time="1.00"/>
+		<PanTexture textureToPan="Data/Images/T_Fire_Tiled_D.png" panTextureSampleScale="2.00,2.00" panTextureSpeed="-0.20,-0.50"/>
+	</Appearance>
+<FloatGraphs>
+	<FloatGraph floatGraphType="0" constantValue="10.000" dataMode="0" minValue="10.000" maxValue="10.000">
+		<FloatPoint minValue="10.000" maxValue="10.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="1" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="2" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="3" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="4" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="5" constantValue="1.000" dataMode="2" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="50.000" maxValue="100.000" time="0.000" easingFunction="8"/>
+		<FloatPoint minValue="3.000" maxValue="6.000" time="0.250" easingFunction="0"/>
+		<FloatPoint minValue="1.000" maxValue="2.000" time="0.650" easingFunction="0"/>
+		<FloatPoint minValue="0.000" maxValue="0.000" time="1.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="6" constantValue="1.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="1.000" maxValue="1.000" time="0.000" easingFunction="2"/>
+		<FloatPoint minValue="0.000" maxValue="0.000" time="1.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="7" constantValue="1.000" dataMode="2" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+		<FloatPoint minValue="0.300" maxValue="0.500" time="0.150" easingFunction="1"/>
+		<FloatPoint minValue="0.800" maxValue="1.000" time="0.400" easingFunction="0"/>
+		<FloatPoint minValue="0.750" maxValue="0.750" time="0.800" easingFunction="10"/>
+		<FloatPoint minValue="0.000" maxValue="0.000" time="1.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="8" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+</FloatGraphs>
+<Float2Graphs>
+	<Float2Graph float2GraphType="0" constantValue="1.000, 1.000" dataMode="2" minValue="8.000, 8.000" maxValue="12.000, 12.000">
+		<Float2Point minValue="0.000,0.000" maxValue="0.000,0.000" time="0.000" easingFunction="1"/>
+		<Float2Point minValue="10.000,10.000" maxValue="14.000,14.000" time="0.300" easingFunction="0"/>
+		<Float2Point minValue="8.000,8.000" maxValue="12.000,12.000" time="1.000" easingFunction="0"/>
+	</Float2Graph>
+</Float2Graphs>
+<Float3Graphs>
+	<Float3Graph float3GraphType="0" constantValue="0.000,0.000,0.000" dataMode="0" minValue="0.000,0.000,10.000" maxValue="0.000,0.000,10.000">
+		<Float3Point minValue="0.000,0.000,10.000" maxValue="0.000,0.000,10.000" time="0.000" easingFunction="0"/>
+	</Float3Graph>
+	<Float3Graph float3GraphType="1" constantValue="0.000,0.000,10.000" dataMode="2" minValue="0.000,0.000,10.000" maxValue="0.000,0.000,10.000">
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.000" easingFunction="1"/>
+		<Float3Point minValue="0.000,0.000,2.000" maxValue="0.000,0.000,5.000" time="0.300" easingFunction="0"/>
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.600" easingFunction="6"/>
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="1.000" easingFunction="0"/>
+	</Float3Graph>
+	<Float3Graph float3GraphType="2" constantValue="0.000,0.000,0.000" dataMode="0" minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000">
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.000" easingFunction="0"/>
+	</Float3Graph>
+</Float3Graphs>
+<EmitterProperties lifetime="-1.00" worldSimulation="0" emitEmitters="0" subEmitterFilePath="" minSubEmitterOrientation="0.00,0.00,0.00" maxSubEmitterOrientation="0.00,0.00,0.00">
+	<EmitterVelocity constantValue="0.000,0.000,0.000" dataMode="0" minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000">
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.000" easingFunction="0"/>
+	</EmitterVelocity>
+	<EmitterChildren>
+	</EmitterChildren>
+</EmitterProperties>
+</Emitter>

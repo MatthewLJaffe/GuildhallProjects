@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Gameplay">
+      <UniqueIdentifier>{bd6518c3-58c8-4aec-b825-b5b5e267af61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameplay\VisualTests">
+      <UniqueIdentifier>{14b27f93-fefe-4427-a01e-e08a1384e528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Save">
+      <UniqueIdentifier>{eedb1227-5716-4f09-a1db-a5396a95a0d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{f01a16b8-a4a2-451c-9938-91e8e3879f65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main_Windows.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCommon.cpp">
+      <Filter>Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapesAndQueries3DTest.cpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClCompile>
+    <ClCompile Include="A5VisualTest.cpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClCompile>
+    <ClCompile Include="A6VisualTest.cpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClCompile>
+    <ClCompile Include="RaycastVsAABB2DTest.cpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClCompile>
+    <ClCompile Include="RaycastVsLineSegmentTest.cpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualTest.cpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsShape3D.cpp">
+      <Filter>Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsSphere3D.cpp">
+      <Filter>Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsCylinder3D.cpp">
+      <Filter>Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsAABB3D.cpp">
+      <Filter>Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="EasingCurvesAndSplinesTest.cpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClCompile>
+    <ClCompile Include="Pachinko2DVisualTest.cpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsPlane3D.cpp">
+      <Filter>Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsOBB3D.cpp">
+      <Filter>Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawingSpline.cpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvexSceneEditorTest.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.hpp">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCommon.hpp">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineBuildPreferences.hpp">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapesAndQueries3DTest.hpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClInclude>
+    <ClInclude Include="A5VisualTest.hpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClInclude>
+    <ClInclude Include="A6VisualTest.hpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClInclude>
+    <ClInclude Include="RaycastVsAABB2DTest.hpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClInclude>
+    <ClInclude Include="RaycastVsLineSegmentTest.hpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualTest.hpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsShape3D.hpp">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsSphere3D.hpp">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsCylinder3D.hpp">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsAABB3D.hpp">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="EasingCurvesAndSplinesTest.hpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClInclude>
+    <ClInclude Include="Pachinko2DVisualTest.hpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsPlane3D.hpp">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsOBB3D.hpp">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawingSpline.hpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvexSceneEditorTest.hpp">
+      <Filter>Gameplay\VisualTests</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Run\Data\Save\Test.binary">
+      <Filter>Save</Filter>
+    </None>
+    <None Include="..\..\Run\Data\Save\Matthew.binary">
+      <Filter>Save</Filter>
+    </None>
+    <None Include="..\..\Run\Data\Scenes\Castle.ghcs">
+      <Filter>Scenes</Filter>
+    </None>
+    <None Include="..\..\Run\Data\Scenes\SkipStuff.ghcs">
+      <Filter>Scenes</Filter>
+    </None>
+  </ItemGroup>
+</Project>

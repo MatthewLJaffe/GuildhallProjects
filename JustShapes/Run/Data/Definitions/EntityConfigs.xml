@@ -1,0 +1,482 @@
+<EntityConfigs>
+
+  <EntityConfig name="Boss2Hair">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="48,48"
+      normalizedPivot =".5,.0"
+      startColor="236,1,106"
+      sortOrder = "4"
+      />
+    <SpriteSheet
+      spriteSheet="Data/Images/Boss2HairSheet.png"
+      spriteSheetDimensions="2,1"
+      spriteCoords="0,0"
+      />
+    <Lifetime
+      liveTime="-1"
+      startAnimation="Boss2HairFlip"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="false"
+      startHazard="false"
+      startVelocity="0,0"
+      startAcceleration="0,0"
+      rotationSpeed="0"
+      becomeHazardTime="-1"
+      collisionRadius="0"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="Boss2Face">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="48,48"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/Boss2FaceSheet.png"
+      startColor="0,0,0"
+      sortOrder = "2"
+      />
+    <SpriteSheet
+      spriteSheet="Data/Images/Boss2FaceSheet.png"
+      spriteSheetDimensions="2,1"
+      spriteCoords="0,0"
+      />
+    <Lifetime
+      liveTime="-1"
+      startAnimation="Boss2FaceMove"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="false"
+      startHazard="false"
+      startVelocity="0,0"
+      startAcceleration="0,0"
+      rotationSpeed="0"
+      becomeHazardTime="-1"
+      collisionRadius="0"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="Wisp">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="16, 16"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/MediumRing.png"
+      startColor="236,1,106"
+      sortOrder = "0"
+      />
+    <Lifetime
+      liveTime="-1"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="false"
+      startHazard="true"
+      startVelocity="0,0"
+      startAcceleration="0,0"
+      rotationSpeed="0"
+      becomeHazardTime="-1"
+      collisionRadius="8"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="WispFlame">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="8, 8"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/SmallRing.png"
+      startColor="236,1,106"
+      sortOrder = "0"
+      />
+    <Lifetime
+      liveTime=".9"
+      startAnimation="FlameParticle"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="true"
+      startHazard="true"
+      startVelocity="0,16"
+      startAcceleration="0,32"
+      rotationSpeed="0"
+      becomeHazardTime=".5"
+      collisionRadius="4"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="CircleBullet">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0, 0"
+      spriteBoundsMaxs ="8, 8"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/SmallRing.png"
+      startColor="236,1,106"
+      sortOrder = "5"
+      />
+    <Lifetime
+      liveTime="10"
+      startAnimation="ProjectileSpawn"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="true"
+      startHazard="true"
+      rotationSpeed="0"
+      collisionRadius="4"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="MediumCircleBullet">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="16, 16"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/SmallRing.png"
+      startColor="236,1,106"
+      sortOrder = "0"
+      />
+    <Lifetime
+      liveTime="10"
+      startAnimation="ProjectileSpawn"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="true"
+      startHazard="true"
+      rotationSpeed="0"
+      collisionRadius="8"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="MediumCircleParticle">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="32, 32"
+      normalizedPivot =".5,.5"
+      startColor="236,1,106"
+      sortOrder = "0"
+      />
+    <SpriteSheet
+      spriteSheet="Data/Images/DottedRing.png"
+      spriteSheetDimensions="2,1"
+      spriteCoords="1,0"
+      />
+    <Lifetime
+      liveTime="2"
+      startAnimation="Boss2SpawnParticle"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="false"
+      startHazard="false"
+      rotationSpeed="0"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="DottedLineCircle">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="64, 64"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/MediumRing.png"
+      startColor="236,1,106"
+      sortOrder = "0"
+      />
+    <Lifetime
+      liveTime="2"
+      startAnimation="BoopBoopBeep"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="true"
+      startHazard="false"
+      rotationSpeed="90"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="TeleportHazardIndicator">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="64, 64"
+      texture="Data/Images/LargeRing.png"
+      normalizedPivot =".5,.5"
+      startColor="236,1,106"
+      sortOrder = "5"
+      />
+    <Lifetime
+      liveTime="2.5"
+      startAnimation="TeleportParticle"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="false"
+      startHazard="false"
+      rotationSpeed="0"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="Scythe">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="48, 48"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/Scythe.png"
+      startColor="236,1,106"
+      sortOrder = "0"
+      />
+    <Lifetime
+      liveTime="-1"
+      startAnimation="BulletFadeIn"
+      hideTime="-1"
+      />
+    <Physics
+      startHazard="true"
+      rotationSpeed="720"
+      collisionRadius="24"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="DevilClone">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="48, 48"
+      normalizedPivot =".5,.5"
+      startColor="236,1,106"
+      sortOrder = "3"
+      />
+    <Lifetime
+      liveTime="4"
+      startAnimation="TeleportIn"
+      hideTime="-1"
+      />
+    <Physics
+      startHazard="true"
+      collisionRadius="24"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="Boss3">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="48, 48"
+      normalizedPivot =".5,.5"
+      startColor="103,210,243"
+      sortOrder = "3"
+      />
+    <SpriteSheet
+      spriteSheet="Data/Images/Boss3Sheet.png"
+      spriteSheetDimensions="14,14"
+      spriteCoords="0,0"
+      />
+    <Lifetime
+      liveTime="-1"
+      startAnimation="Boss3FadeIn"
+      hideTime="-1"
+      />
+    <Physics
+      startHazard="true"
+      collisionRadius="24"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="TearBullet">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0, 0"
+      spriteBoundsMaxs ="4, 4"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/SmallRing.png"
+      startColor="236,1,106"
+      sortOrder = "1"
+      />
+    <Lifetime
+      liveTime="10"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="true"
+      startHazard="true"
+      rotationSpeed="0"
+      startAcceleration="0,-128"
+      collisionRadius="2"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="SpikeBulletRiseUp">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="24, 24"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/BigSpikeyBall.png"
+      startColor="236,1,106"
+      sortOrder = "0"
+      />
+    <Lifetime
+      liveTime="10"
+      startAnimation="SpikeBulletRiseUp"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="true"
+      startHazard="true"
+      rotationSpeed="90"
+      startVelocity="0,24"
+      startAcceleration="0,64"
+      collisionRadius="10"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="BigCircleParticle">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="299, 299"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/BigCircle.png"
+      startColor="236,1,106"
+      sortOrder = "0"
+      />
+    <Lifetime
+      liveTime="1.0"
+      startAnimation="BigCircleParticleSpawn"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="false"
+      startHazard="false"
+      />
+  </EntityConfig>
+
+
+  <EntityConfig name="BigGear">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="299, 299"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/BigGear.png"
+      startColor="236,1,106"
+      sortOrder = "0"
+      />
+    <Lifetime
+      liveTime="3.5"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="true"
+      startHazard="true"
+      rotationSpeed="90"
+      startVelocity="-128,0"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="SawBlade">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="52, 52"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/SawBlade.png"
+      startColor="236,1,106"
+      sortOrder = "4"
+      />
+    <Lifetime
+      liveTime="4.0"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="true"
+      startHazard="true"
+      collisionRadius="10"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="Heart">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="64, 64"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/Heart.png"
+      startColor="236,1,106"
+      sortOrder = "5"
+      />
+    <Lifetime
+      liveTime="1.5"
+      startAnimation="HeartBeat"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="true"
+      startHazard="true"
+      collisionRadius="10"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="SlowSawBlade">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="52, 52"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/SawBlade.png"
+      startColor="236,1,106"
+      sortOrder = "4"
+      />
+    <Lifetime
+      liveTime="17.0"
+      startAnimation="BulletFadeIn"
+      hideTime="-1"
+      />
+    <Physics
+      startVelocity="-16.f, 0.f"
+      simulatePhysics="true"
+      startHazard="true"
+      rotationSpeed="360"
+      collisionRadius="10"
+      />
+  </EntityConfig>
+
+  <EntityConfig name="Heart">
+    <Visual
+      startOrientation="0"
+      spriteBoundsMins ="0,0"
+      spriteBoundsMaxs ="64, 64"
+      normalizedPivot =".5,.5"
+      texture="Data/Images/Heart.png"
+      startColor="236,1,106"
+      sortOrder = "5"
+      />
+    <Lifetime
+      liveTime="1.5"
+      startAnimation="HeartBeat"
+      hideTime="-1"
+      />
+    <Physics
+      simulatePhysics="true"
+      startHazard="true"
+      collisionRadius="10"
+      />
+  </EntityConfig>
+
+
+</EntityConfigs>
+
+

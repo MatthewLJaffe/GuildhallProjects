@@ -1,0 +1,3 @@
+<Model name="Challenger" path="Data/Models/Ships/Imperial.obj" material="Data/Materials/Ships/ImperialRedMaterial.xml">
+  <Transform x="1,0,0" y="0,0,1" z="0,-1,0" t="0,0,1" scale="2.0" rot="0,-90,0"/>
+</Model>

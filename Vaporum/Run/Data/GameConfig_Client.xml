@@ -1,0 +1,15 @@
+<GameConfig
+  windowTitle="Vaporum Client"
+  windowSize="1200,400"
+  windowPosition="35,575"
+  netMode="Client"
+  netHostAddress="127.0.0.1:23456"
+/>
+
+<!--
+  windowTitle="Vaporum Client"
+  windowSize="1500,500"
+  windowPosition="35,575"
+  netMode="Client"
+-->
+

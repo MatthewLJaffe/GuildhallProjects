@@ -1,0 +1,3 @@
+<Model name="Woofer" path="Data/Models/Fancy/Woofer.obj" material="Data/Materials/WooferMaterial.xml">
+  <Transform x="1,0,0" y="0,0,1" z="0,-1,0" t="0,0,0" scale=".75" rot="-90,0,0"/>
+</Model>

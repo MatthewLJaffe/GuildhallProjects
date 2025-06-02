@@ -1,0 +1,37 @@
+#include "Game/GameCommon.hpp"
+#include "Engine/Core/Vertex_PCU.hpp"
+#include "Engine/Renderer/Renderer.hpp"
+
+BitmapFont* g_bitmapFont = nullptr;
+Texture* TEXTURE_MISSILE = nullptr;
+Texture* TEXTURE_WIN_SCREEN = nullptr;
+Texture* TEXTURE_ARIES = nullptr;
+Texture* TEXTURE_CAPRICORN = nullptr;
+Texture* TEXTURE_GOOD_BULLET = nullptr;
+Texture* TEXTURE_EVIL_BULLET = nullptr;
+Texture* TEXTURE_EXPLOSION_SHEET = nullptr;
+Texture* TEXTURE_TILE_SHEET = nullptr;
+
+SoundID SOUND_ID_TEST;
+SoundID SOUND_ID_STARTUP_MUSIC;
+SoundID SOUND_ID_GAMEPLAY_MUSIC;
+SoundID SOUND_ID_START;
+SoundID SOUND_ID_QUIT;
+SoundID SOUND_ID_PAUSE;
+SoundID SOUND_ID_UNPAUSE;
+SoundID SOUND_ID_PLAYER_SHOOT;
+SoundID SOUND_ID_ENEMY_SHOOT;
+SoundID SOUND_ID_PLAYER_HIT;
+SoundID SOUND_ID_ENEMY_HIT;
+SoundID SOUND_ID_ENEMY_DIED;
+SoundID SOUND_ID_PLAYER_DIED;
+SoundID SOUND_ID_VICTORY;
+SoundID SOUND_ID_WELCOME;
+SoundID SOUND_ID_BULLET_RICOCHET1;
+SoundID SOUND_ID_BULLET_RICOCHET2;
+SoundID SOUND_ID_DISCOVER;
+
+SpriteSheet* SPRITE_SHEET_TILES;
+SpriteSheet* SPRITE_SHEET_EXPLOSION;
+
+SpriteAnimDefinition* ANIM_DEFINITION_EXPLOSION = nullptr;

@@ -1,0 +1,3 @@
+<Model name="Health" path="Data/Models/Battery.obj" material="Data/Materials/HealthMaterial.xml">
+  <Transform x="-1,0,0" y="0,0,1" z="0,1,0" t="0,0,0" scale="2.5"/>
+</Model>

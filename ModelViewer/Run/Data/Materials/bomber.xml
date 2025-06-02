@@ -1,0 +1,9 @@
+<Material
+  name="bomber"
+  shader="Data/Shaders/Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Images/bomber_Albedo_blue.tga"
+  normalTexture="Data/Images/bomber_Normal.tga"
+  specGlossEmitTexture="Data/Images/bomber_Metallic.tga"
+  color="255,255,255,255"
+/>

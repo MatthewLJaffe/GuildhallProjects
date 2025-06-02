@@ -1,0 +1,14 @@
+# Blender 4.4.0 MTL File: 'Battery Pack.blend'
+# www.blender.org
+
+newmtl battery
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/battery_BaseColor.png
+map_Ns C:/battery_Roughness.png
+map_refl C:/battery_Metallic.png
+map_Ke C:/battery_Emission.png
+map_Bump -bm 1.000000 C:/battery_Normal.png

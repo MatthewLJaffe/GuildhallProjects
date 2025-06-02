@@ -1,0 +1,24 @@
+<FloatCurve name="Dash">
+<Point position="0.000,0.000"/>
+<Point position="0.058,0.141"/>
+<Point position="0.103,0.278"/>
+<Point position="0.143,0.436"/>
+<Point position="0.174,0.571"/>
+<Point position="0.192,0.678"/>
+<Point position="0.208,0.803"/>
+<Point position="0.217,0.890"/>
+<Point position="0.242,0.968"/>
+<Point position="0.260,0.997"/>
+<Point position="0.302,1.000"/>
+<Point position="0.600,1.000"/>
+<Point position="0.637,0.980"/>
+<Point position="0.658,0.959"/>
+<Point position="0.691,0.908"/>
+<Point position="0.731,0.774"/>
+<Point position="0.749,0.658"/>
+<Point position="0.783,0.494"/>
+<Point position="0.823,0.354"/>
+<Point position="0.870,0.239"/>
+<Point position="0.926,0.119"/>
+<Point position="1.000,0.000"/>
+</FloatCurve>

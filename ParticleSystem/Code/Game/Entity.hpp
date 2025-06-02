@@ -1,0 +1,35 @@
+#pragma once
+#include "Game/GameCommon.hpp"
+
+class Game;
+class App;
+class Renderer;
+
+extern App* g_theApp;
+extern Renderer* g_theRenderer;
+
+class Entity
+{
+
+public:
+	Entity(Game* game, const Vec3& startPos);
+	Entity(Game* game, const Vec3& startPos, EulerAngles const& orientation);
+	virtual ~Entity();
+	virtual void Update(float deltaSeconds) = 0;
+	virtual void Render() const = 0;
+	Mat44 GetModelMatrix() const;
+	Vec3 GetForwardNormal();
+
+public:
+	bool m_isActive = true;
+	Vec3 m_position;
+	Vec3 m_velocity = Vec3(0.f, 0.f, 0.f);
+	EulerAngles m_orientationDegrees;
+	EulerAngles m_angularVelocity;
+	Game* m_game = nullptr;
+	Rgba8 m_color = Rgba8::WHITE;
+	float m_liveTime = 0.f;
+	bool m_isAlive = true;
+	bool m_hasLifetime = false;
+	AABB3 m_physicsBounds = AABB3(Vec3::ZERO, Vec3::ZERO);
+};

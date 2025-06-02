@@ -1,0 +1,9 @@
+<Material
+  name="carrier"
+  shader="Data/Shaders/Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Images/carrier_Albedo_blue.tga"
+  normalTexture="Data/Images/carrier_Normal.tga"
+  specGlossEmitTexture="Data/Images/carrier_Metallic.tga"
+  color="255,255,255,255"
+/>

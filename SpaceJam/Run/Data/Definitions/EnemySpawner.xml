@@ -1,0 +1,192 @@
+<EnemySpawner>
+
+	<Spawner beat="4">
+		<Rate unitsPerBeat=".15">
+			<RateUnit name="Thrall" chance="1.0" spawnType="NEAR"/>
+		</Rate>
+	</Spawner>
+
+	<Spawner beat="32">
+		<Burst>
+			<BurstUnit name="HealthPickup" number="10" spawnType="RANDOM"/>
+			<BurstUnit name="MissilePickup" number="10" spawnType="RANDOM"/>
+			<BurstUnit name="Battery" number="10" spawnType="RANDOM"/>
+		</Burst>
+	</Spawner>
+
+	<Spawner beat="64">
+		<Rate unitsPerBeat=".2">
+			<RateUnit name="Thrall" chance="1.0" spawnType="NEAR"/>
+		</Rate>
+		<Burst>
+			<BurstUnit name="HealthPickup" number="2" spawnType="RANDOM"/>
+			<BurstUnit name="MissilePickup" number="2" spawnType="RANDOM"/>
+			<BurstUnit name="Battery" number="2" spawnType="RANDOM"/>
+		</Burst>
+	</Spawner>
+
+	<Spawner beat="96">
+		<Burst>
+			<BurstUnit name="Imperial" number="1" spawnType="FAR"/>
+		</Burst>
+	</Spawner>
+	
+	<Spawner beat="128">
+		<Rate unitsPerBeat=".25">
+			<RateUnit name="Thrall" chance=".7" spawnType="NEAR"/>
+			<RateUnit name="Gunner" chance=".3" spawnType="NEAR"/>
+		</Rate>
+	<TrackSwitch path="Data/Audio/Tracks/Wave1-2.mp3" beats="96"/>
+	</Spawner>
+
+	<Spawner beat="192">
+		<Rate unitsPerBeat=".25">
+			<RateUnit name="Thrall" chance=".6" spawnType="NEAR"/>
+			<RateUnit name="Gunner" chance=".3" spawnType="NEAR"/>
+			<RateUnit name="Artillery" chance=".1" spawnType="NEAR"/>
+		</Rate>
+	</Spawner>
+
+	<Spawner beat="224">
+		<Rate unitsPerBeat=".0">
+		</Rate>
+		<Burst>
+			<BurstUnit name="HealthPickup" number="3" spawnType="NEAR"/>
+			<BurstUnit name="MissilePickup" number="3" spawnType="NEAR"/>
+			<BurstUnit name="Battery" number="3" spawnType="NEAR"/>
+		</Burst>
+		<TrackSwitch path="Data/Audio/Tracks/Transition1To2-1.mp3" beats="32"/>
+	</Spawner>
+
+	<Spawner beat="256">
+	<TrackSwitch path="Data/Audio/Tracks/Wave2-1.mp3" beats="32"/>
+		<Rate unitsPerBeat=".2">
+			<RateUnit name="HealthPickup" chance=".5" spawnType="NEAR"/>
+			<RateUnit name="MissilePickup" chance=".25" spawnType="NEAR"/>
+			<BurstUnit name="Battery" number=".25" spawnType="NEAR"/>
+		</Rate>
+		<Burst>
+			<BurstUnit name="Thrall" number="15" spawnType="FAR"/>
+			<BurstUnit name="Gunner" number="10" spawnType="FAR"/>
+			<BurstUnit name="Artillery" number="5" spawnType="FAR"/>
+		</Burst>
+	</Spawner>
+
+	<Spawner beat="328">
+		<Burst>
+			<BurstUnit name="Imperial" number="1" spawnType="FAR"/>
+		</Burst>
+		<Rate unitsPerBeat=".3">
+			<RateUnit name="Thrall" chance=".6" spawnType="NEAR"/>
+			<RateUnit name="Gunner" chance=".3" spawnType="NEAR"/>
+			<RateUnit name="Artillery" chance=".1" spawnType="NEAR"/>
+		</Rate>
+	</Spawner>
+
+	<Spawner beat="400">
+		<Rate unitsPerBeat=".4">
+			<RateUnit name="Thrall" chance=".55" spawnType="NEAR"/>
+			<RateUnit name="Gunner" chance=".3" spawnType="NEAR"/>
+			<RateUnit name="Artillery" chance=".15" spawnType="NEAR"/>
+		</Rate>
+		<Burst>
+			<BurstUnit name="HealthPickup" number="10" spawnType="RANDOM"/>
+			<BurstUnit name="MissilePickup" number="10" spawnType="RANDOM"/>
+			<BurstUnit name="Battery" number="10" spawnType="RANDOM"/>
+		</Burst>
+		<TrackSwitch path="Data/Audio/Tracks/Wave3-1.mp3" beats="32"/>
+	</Spawner>
+	
+	<Spawner beat="432">
+		<Burst>
+			<BurstUnit name="Imperial" number="1" spawnType="FAR"/>
+		</Burst>
+	</Spawner>
+
+	<Spawner beat="464">
+		<Burst>
+			<BurstUnit name="Imperial" number="1" spawnType="FAR"/>
+		</Burst>
+	</Spawner>
+
+	<Spawner beat="496" canWin="true">
+		<Rate unitsPerBeat=".0">
+		</Rate>
+		<Burst>
+			<BurstUnit name="Thrall" number="10" spawnType="NEAR"/>
+			<BurstUnit name="Thrall" number="15" spawnType="FAR"/>
+			<BurstUnit name="Gunner" number="10" spawnType="FAR"/>
+			<BurstUnit name="Artillery" number="5" spawnType="FAR"/>
+			<BurstUnit name="Imperial" number="2" spawnType="FAR"/>
+			<BurstUnit name="HealthPickup" number="15" spawnType="RANDOM"/>
+			<BurstUnit name="MissilePickup" number="15" spawnType="RANDOM"/>
+			<BurstUnit name="Battery" number="15" spawnType="RANDOM"/>
+		</Burst>
+	</Spawner>
+
+	<Spawner beat="544" canWin="true">
+	</Spawner>
+</EnemySpawner>
+
+<!--
+<EnemySpawner>
+  <Spawner beat="0">
+	  <TrackSwitch path="Data/Audio/Tracks/SpaceJamIntro-2.mp3" beats="128"/>
+	  <Rate unitsPerBeat=".2">
+      <RateUnit name="Thrall" chance="1.0"/>
+	</Rate>
+  </Spawner>
+	
+	<Spawner beat="64">
+		<Rate unitsPerBeat=".3">
+			<RateUnit name="Thrall" chance=".7"/>
+			<RateUnit name="Gunner" chance=".3"/>
+		</Rate>
+	</Spawner>
+	
+	<Spawner beat="96">
+		<BurstUnit name="Battery" number="5"/>
+		<BurstUnit name="MissilePickup" number="5"/>
+	</Spawner>
+
+	<Spawner beat="128">
+	<TrackSwitch path="Data/Audio/Tracks/Wave1-2.mp3" beats="96"/>
+	<Burst>
+      <BurstUnit name="Thrall" number="5"/>
+	  <BurstUnit name="Gunner" number="5"/>
+	</Burst>
+    <Rate unitsPerBeat="0"/>
+  </Spawner>
+
+	<Spawner beat="180">
+		<Rate unitsPerBeat=".35">
+			<RateUnit name="Thrall" chance=".6"/>
+			<RateUnit name="Gunner" chance=".3"/>
+			<RateUnit name="Artillery" chance=".1"/>
+		</Rate>
+	</Spawner>
+
+  <Spawner beat="224">
+	  <Rate unitsPerBeat="0">
+	  </Rate>
+	<TrackSwitch path="Data/Audio/Tracks/Transition1To2-1.mp3" beats="32"/>
+  </Spawner>
+
+  <Spawner beat="256">
+	<TrackSwitch path="Data/Audio/Tracks/Wave2-1.mp3" beats="32"/>
+	<Burst>
+      <BurstUnit name="Thrall" number="15"/>
+	  <BurstUnit name="Gunner" number="10"/>
+	  <BurstUnit name="Artillery" number="5"/>
+	</Burst>
+    <Rate unitsPerBeat="0"/>
+  </Spawner>
+
+  <Spawner beat="480">
+	  <TrackSwitch path="Data/Audio/Tracks/Wave3-1.mp3" beats="32"/>
+  </Spawner>
+
+
+</EnemySpawner>
+
+-->

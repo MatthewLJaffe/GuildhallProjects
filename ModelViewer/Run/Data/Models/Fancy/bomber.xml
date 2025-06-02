@@ -1,0 +1,3 @@
+<Model name="bomber" path="Data/Models/Fancy/bomber.obj" material="Data/Materials/bomber.xml">
+  <Transform x="1,0,0" y="0,0,1" z="0,-1,0" t="0,0,0" scale="0.025" rot="0,-90,0"/>
+</Model>

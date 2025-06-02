@@ -1,0 +1,167 @@
+# Blender 4.3.2 MTL File: 'uploads_files_2791101_woofer.blend'
+# www.blender.org
+
+newmtl cabo_
+Ka 1.000000 1.000000 1.000000
+Kd 0.174328 0.067531 0.038912
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Ns C:/Fabric012_2K_Roughness.jpg
+map_Bump -bm 1.000000 C:/Fabric012_2K_Normal.jpg
+
+newmtl grade
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.474545 0.474545 0.474545
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+illum 2
+map_refl C:/SheetMetal001_2K_Metalness.jpg
+map_d C:/SheetMetal001_2K_Opacity.jpg
+map_Bump -bm 1.000000 C:/Metal032_2K_Normal.jpg
+
+newmtl imã
+Ka 1.000000 1.000000 1.000000
+Ks 0.176364 0.176364 0.176364
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Plastic011_1K_Color.png
+map_Ns C:/Plastic011_1K_Roughness.png
+map_Bump -bm 1.000000 C:/Plastic011_1K_Normal.png
+
+newmtl metal_1
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 0.140000
+d 1.000000
+illum 2
+map_Ns C:/Metal032_2K_Roughness.jpg
+map_refl C:/Metal032_2K_Metalness.jpg
+map_Bump -bm 1.000000 C:/Metal032_2K_Normal.jpg
+
+newmtl metal_2
+Ka 0.763636 0.763636 0.763636
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+d 0.960000
+illum 6
+map_Kd C:/Plastic011_1K_Color.png
+map_Ns C:/Plastic011_1K_Roughness.png
+map_Bump -bm 6.000000 C:/Plastic011_1K_Normal.png
+
+newmtl papel3
+Ka 0.640000 0.640000 0.640000
+Kd 0.188215 0.115270 0.018259
+Ks 0.234545 0.234545 0.234545
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Ns C:/Fabric030_2K_Roughness.jpg
+map_Bump -bm 0.600000 C:/Fabric030_2K_Normal.jpg
+
+newmtl papel_1
+Ka 1.000000 1.000000 1.000000
+Ks 0.001818 0.001818 0.001818
+Ke 0.000000 0.000000 0.000000
+Ni 33.249996
+d 1.000000
+illum 2
+map_Kd C:/Plastic006_1K_Color.png
+map_Ns C:/Plastic006_1K_Roughness.png
+map_Bump -bm 5.000000 C:/Plastic006_1K_Normal.png
+
+newmtl papel_2
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+d 1.000000
+illum 1
+map_Ns C:/Fabric039_2K_Roughness.jpg
+map_Bump -bm 6.200000 C:/Fabric039_2K_Normal.jpg
+
+newmtl pino_ouro
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Ns C:/Metal035_1K_Roughness.png
+map_refl C:/Metal035_1K_Color.png
+map_Bump -bm 0.670000 C:/Metal035_1K_Normal.png
+
+newmtl plastico_2
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.325455 0.325455 0.325455
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Ns C:/Fabric030_2K_Roughness.jpg
+map_Bump -bm 0.600000 C:/Fabric030_2K_Normal.jpg
+
+newmtl plastico_5
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.063636 0.063636 0.063636
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Ns C:/Metal028_2K_Roughness.jpg
+map_refl C:/Metal028_2K_Color.jpg
+map_Bump -bm 0.500000 C:/Metal028_2K_Normal.jpg
+
+newmtl plastico_6
+Ns 295.540466
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.281818 0.281818 0.281818
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl plastico_7
+Ns 250.000000
+Ka 0.410909 0.410909 0.410909
+Kd 0.000000 0.000000 0.000000
+Ks 0.110909 0.110909 0.110909
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl plastico_preto
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.002699 0.002699 0.002699
+Ks 0.445455 0.445455 0.445455
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl plastico_vermelho
+Ns 188.829758
+Ka 1.000000 1.000000 1.000000
+Kd 0.581973 0.023791 0.028109
+Ks 0.401818 0.401818 0.401818
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2

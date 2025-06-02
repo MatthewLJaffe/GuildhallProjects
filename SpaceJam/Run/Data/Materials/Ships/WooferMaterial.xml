@@ -1,0 +1,6 @@
+<Material
+  name="Woofer"
+  shader="Data/Shaders/Phong"
+  vertexType="Vertex_PCUTBN"
+  color="60,60,60,255"
+/>

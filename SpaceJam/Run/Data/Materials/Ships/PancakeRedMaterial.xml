@@ -1,0 +1,7 @@
+<Material
+  name="PancakeRedMaterial"
+  shader="Data/Shaders/Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Images/Ships/Pancake_Red.png"
+  color="255,255,255,255"
+/>

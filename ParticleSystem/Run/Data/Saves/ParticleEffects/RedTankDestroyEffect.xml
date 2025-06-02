@@ -1,0 +1,89 @@
+<ParticleEffect name="RedTankDestroyEffect" scale="1.000">
+<Emitters>
+<Emitter name="RedTankDestroy">
+	<Emission emissionRate="500.0" emissionRadius="1.00" boxDimensions="1.000,1.000,1.000" lifetime="1.00, 2.00" emissionType="2" meshFilePath="Data/Models/Tank1.xml" meshScale="5.000,5.000,5.000" emissionMode="1" repeat="0" repeatTime="1.00" emitTime="-1.00" numBursts="1" burstInterval="0.100"/>
+	<Physics ignoreWorldPhysics="1" depthBufferCollisions="0" velocityXRange="0.00,0.00" velocityYRange="0.00,0.00" velocityZRange="0.00,0.00" inheritEmitterVelocity="0" inheritVelocityPercentage="1.00" setLifetimeVelocity="1" velocityMode="1" orientToVelocity="0" perlinNoiseForce="0.00"
+	curlNoiseAffectPosition="0" curlNoiseScale="2.00" curlNoiseSampleSize="2.00" curlNoiseOctives="5" curlNoisePan="-1.00, 1.00, -1.00"
+	pointForcePosition="0.00,0.00,0.00" pointForceFalloffExponent="2.00" pointForceAttract="true" pointForceRadius="0.00"
+	returnToOriginForce="0.00" returnToOriginDelay="1.00" ignoreForcesWhenAtOrigin="0"
+	vortexAxisDir="1.00,0.00,0.00" vortexAxisOrigin="0.00,0.00,0.00" vortexForceRadius="0.00">
+	</Physics>
+	<Appearance spriteSheetFilePath="Data/Images/sprite_sheet.png" spriteSheetDimensions="9,9" spriteStartIndex="4" spriteEndIndex="4" stretchBillboard="0" lengthPerSpeed="0.10" spriteEasingFunction="0" stretchMode="0" renderMode="2" particleMeshFilePath="Data/Models/Tank1.xml" partialMeshTriangles="10">
+		<ColorOverLife color="156,22,22,255" time="0.00"/>
+		<ColorOverLife color="156,22,22,255" time="0.85"/>
+		<ColorOverLife color="156,22,22,0" time="1.00"/>
+		<PanTexture textureToPan="" panTextureSampleScale="1.00,1.00" panTextureSpeed="0.00,0.00"/>
+	</Appearance>
+<FloatGraphs>
+	<FloatGraph floatGraphType="0" constantValue="50.000" dataMode="0" minValue="8.000" maxValue="8.000">
+		<FloatPoint minValue="8.000" maxValue="8.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="1" constantValue="0.000" dataMode="0" minValue="10.000" maxValue="10.000">
+		<FloatPoint minValue="10.000" maxValue="10.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="2" constantValue="2.000" dataMode="0" minValue="3.000" maxValue="3.000">
+		<FloatPoint minValue="3.000" maxValue="3.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="3" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="4" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="5" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="6" constantValue="1.000" dataMode="0" minValue="1.000" maxValue="1.000">
+		<FloatPoint minValue="1.000" maxValue="1.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="7" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="8" constantValue="0.000" dataMode="2" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="7.000" maxValue="25.000" time="0.000" easingFunction="6"/>
+		<FloatPoint minValue="-1.000" maxValue="1.000" time="0.700" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="9" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+</FloatGraphs>
+<Float2Graphs>
+	<Float2Graph float2GraphType="0" constantValue="1.000, 1.000" dataMode="2" minValue="1.000, 1.000" maxValue="1.000, 1.000">
+		<Float2Point minValue="1.000,1.000" maxValue="1.000,1.000" time="0.000" easingFunction="0"/>
+		<Float2Point minValue="0.100,0.100" maxValue="0.100,0.100" time="0.000" easingFunction="0"/>
+	</Float2Graph>
+</Float2Graphs>
+<Float3Graphs>
+	<Float3Graph float3GraphType="0" constantValue="0.000,0.000,-10.000" dataMode="2" minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000">
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.000" easingFunction="0"/>
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.400" easingFunction="0"/>
+		<Float3Point minValue="0.000,0.000,-10.000" maxValue="0.000,0.000,-10.000" time="0.410" easingFunction="0"/>
+	</Float3Graph>
+	<Float3Graph float3GraphType="1" constantValue="0.000,0.000,10.000" dataMode="0" minValue="0.000,0.000,10.000" maxValue="0.000,0.000,10.000">
+		<Float3Point minValue="0.000,0.000,10.000" maxValue="0.000,0.000,10.000" time="0.000" easingFunction="0"/>
+	</Float3Graph>
+	<Float3Graph float3GraphType="2" constantValue="0.000,0.000,0.000" dataMode="0" minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000">
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.000" easingFunction="0"/>
+	</Float3Graph>
+	<Float3Graph float3GraphType="3" constantValue="0.000,0.000,0.000" dataMode="2" minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000">
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.000" easingFunction="0"/>
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.050" easingFunction="0"/>
+		<Float3Point minValue="-200.000,-200.000,-200.000" maxValue="200.000,200.000,200.000" time="1.000" easingFunction="0"/>
+	</Float3Graph>
+	<Float3Graph float3GraphType="4" constantValue="1.000,1.000,1.000" dataMode="0" minValue="1.000,1.000,1.000" maxValue="1.000,1.000,1.000">
+		<Float3Point minValue="1.000,1.000,1.000" maxValue="1.000,1.000,1.000" time="0.000" easingFunction="0"/>
+	</Float3Graph>
+</Float3Graphs>
+<EmitterProperties lifetime="-1.00" startDelay="-1.00" worldSimulation="0" emitEmitters="0" subEmitterFilePath="" minSubEmitterOrientation="0.00,0.00,0.00" maxSubEmitterOrientation="0.00,0.00,0.00">
+	<EmitterVelocity constantValue="0.000,0.000,0.000" dataMode="0" minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000">
+		<Float3Point minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000" time="0.000" easingFunction="0"/>
+	</EmitterVelocity>
+	<EmitterChildren>
+	</EmitterChildren>
+</EmitterProperties>
+</Emitter>
+</Emitters>
+	<EmitterInstances>
+		<EmitterInstance emitter="RedTankDestroy" position="0.00,0.00,0.00" orientationDegrees="0.00,0.00,0.00"/>
+	</EmitterInstances>
+</ParticleEffect>

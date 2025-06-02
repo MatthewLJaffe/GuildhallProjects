@@ -1,0 +1,17 @@
+<FloatCurve name="Exponential">
+<Point position="0.00,0.00"/>
+<Point position="0.13,0.01"/>
+<Point position="0.22,0.03"/>
+<Point position="0.32,0.05"/>
+<Point position="0.44,0.09"/>
+<Point position="0.51,0.12"/>
+<Point position="0.58,0.17"/>
+<Point position="0.68,0.24"/>
+<Point position="0.75,0.32"/>
+<Point position="0.81,0.40"/>
+<Point position="0.84,0.47"/>
+<Point position="0.88,0.55"/>
+<Point position="0.92,0.66"/>
+<Point position="0.95,0.77"/>
+<Point position="1.00,1.00"/>
+</FloatCurve>

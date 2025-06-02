@@ -1,0 +1,9 @@
+<Material
+  name="fighter"
+  shader="Data/Shaders/Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Images/spaceship_Albedo_blue.tga"
+  normalTexture="Data/Images/spaceship_Normal.tga"
+  specGlossEmitTexture="Data/Images/spaceship_Metallic.tga"
+  color="255,255,255,255"
+/>

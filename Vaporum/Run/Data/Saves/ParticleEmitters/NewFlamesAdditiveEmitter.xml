@@ -1,0 +1,59 @@
+<Emitter name="NewFlamesAdditive">
+	<Emission emissionRate="1000.0" emissionRadius="1.80" lifetime="0.50, 1.00" emissionType="0" meshFilePath="" meshScale="1.000,1.000,1.000" emissionMode="0" boxDimensions="3.000,3.000,2.000" repeat="0" repeatTime="1.00" emitTime="-1.00"/>
+	<Physics velocityXRange="-3.00,3.00" velocityYRange="-3.00,3.00" velocityZRange="5.00,15.00" orientToVelocity="1" perlinNoiseForce="0.00"
+	curlNoiseScale="0.50" curlNoiseSampleSize="0.50" curlNoiseOctives="3" curlNoisePan="1.00, -1.00, -1.00"
+	pointForcePosition="0.00,0.00,0.00" pointForceFalloffExponent="2.00" pointForceAttract="true" pointForceRadius="0.00"
+	returnToOriginForce="0.00" returnToOriginDelay="1.00" ignoreForcesWhenAtOrigin="0"
+	vortexAxisDir="1.00,0.00,0.00" vortexAxisOrigin="0.00,0.00,0.00" vortexForceRadius="0.00">
+	</Physics>
+	<Appearance spriteSheetFilePath="Data/Images/T_Fire_SubUV.png" spriteSheetDimensions="6,6" spriteStartIndex="0" spriteEndIndex="35">
+		<ColorOverLife color="255,0,0,255" time="0.00"/>
+		<ColorOverLife color="250,228,97,200" time="0.20"/>
+		<ColorOverLife color="206,53,38,200" time="0.40"/>
+		<ColorOverLife color="218,22,22,220" time="0.60"/>
+		<ColorOverLife color="228,27,27,200" time="0.70"/>
+		<ColorOverLife color="44,5,5,0" time="1.00"/>
+		<PanTexture textureToPan="Data/Images/T_Fire_Tiled_D.png" panTextureSampleScale="0.50,0.50" panTextureSpeed="0.00,-0.25" />
+	</Appearance>
+	<FloatGraphs>
+	<FloatGraph floatGraphType="0" constantValue="-999.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="15.000" maxValue="15.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="1" constantValue="9.000" dataMode="0" minValue="9.000" maxValue="9.000">
+		<FloatPoint minValue="9.000" maxValue="9.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="2" constantValue="16.000" dataMode="0" minValue="16.000" maxValue="16.000">
+		<FloatPoint minValue="16.000" maxValue="16.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="3" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="4" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="5" constantValue="1.000" dataMode="0" minValue="1.000" maxValue="1.000">
+		<FloatPoint minValue="1.000" maxValue="1.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="6" constantValue="0.000" dataMode="0" minValue="0.000" maxValue="0.000">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+	<FloatGraph floatGraphType="7" constantValue="0.500" dataMode="0" minValue="0.500" maxValue="0.500">
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+		<FloatPoint minValue="0.000" maxValue="0.000" time="0.000" easingFunction="0"/>
+		<FloatPoint minValue="0.500" maxValue="0.500" time="0.000" easingFunction="0"/>
+	</FloatGraph>
+</FloatGraphs>
+<Float2Graphs>
+	<Float2Graph float2GraphType="0" constantValue="-999.000, -999.000" dataMode="0" minValue="0.000, 0.000" maxValue="0.000, 0.000">
+	</Float2Graph>
+</Float2Graphs>
+	<Float3Graphs>
+	<Float3Graph float3GraphType="0" constantValue="-999.000,-999.000,-999.000" dataMode="0" minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000">
+	</Float3Graph>
+	<Float3Graph float3GraphType="1" constantValue="-999.000,-999.000,-999.000" dataMode="0" minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000">
+	</Float3Graph>
+	<Float3Graph float3GraphType="2" constantValue="-999.000,-999.000,-999.000" dataMode="0" minValue="0.000,0.000,0.000" maxValue="0.000,0.000,0.000">
+	</Float3Graph>
+</Float3Graphs>
+</Emitter>

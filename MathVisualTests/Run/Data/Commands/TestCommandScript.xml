@@ -1,0 +1,5 @@
+<TestCommandScript>
+		<Test id="1"/>
+		<Test id="2"/>
+		<ChangeMap map="Castle" pos="3.5,4.5" orient="135"/>
+</TestCommandScript>

@@ -1,0 +1,7 @@
+<Material
+  name="ExecutionerRed"
+  shader="Data/Shaders/Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Images/Ships/Executioner_Red.png"
+  color="255,255,255,255"
+/>

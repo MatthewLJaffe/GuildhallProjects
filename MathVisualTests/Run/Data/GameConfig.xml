@@ -1,0 +1,6 @@
+<GameConfig
+  windowTitle="Math Visual Tests"
+  engineDataPath="../../Engine/Data"
+  readInPrecompiledShaders="false"
+  writeOutCompiledShaders="false"
+/>

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{386c27e6-d52b-4b6b-bb11-929c7f6ff7d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{bd6518c3-58c8-4aec-b825-b5b5e267af61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameStates">
+      <UniqueIdentifier>{7cf50e74-17a2-4600-8fd3-d5b743deaf5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{deb8afd3-1a27-46f8-9c73-a4aaae67ffec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities">
+      <UniqueIdentifier>{875cc23d-e5f8-409e-b9cc-9e637f6ce754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entities\UI">
+      <UniqueIdentifier>{5f1c8684-e1fe-4a0d-ab02-bd78de64aa98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Tasks">
+      <UniqueIdentifier>{1a60b2ec-9535-4337-993a-3f326bdb7acc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main_Windows.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCommon.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateMainMenu.cpp">
+      <Filter>Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateHowToPlay.cpp">
+      <Filter>Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateSettings.cpp">
+      <Filter>Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateLevelSelect.cpp">
+      <Filter>Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateLevel.cpp">
+      <Filter>Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateLevel1.cpp">
+      <Filter>Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Game\Entities\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationDefinition.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyProjectile.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateLevel2.cpp">
+      <Filter>Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateLevel3.cpp">
+      <Filter>Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Tasks.cpp">
+      <Filter>Game\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss1.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="ConeHazardSpawner.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="ExplodingProjectile.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityConfig.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss2.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="BobbingProjectile.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Scythe.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Wisp.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxHazard.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="AttractProjectile.cpp">
+      <Filter>Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss3.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BigGear.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Sawblade.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCommon.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="App.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineBuildPreferences.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.hpp">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateMainMenu.hpp">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateHowToPlay.hpp">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateSettings.hpp">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateLevelSelect.hpp">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateLevel.hpp">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateLevel1.hpp">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationDefinition.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.hpp">
+      <Filter>Game\Entities\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyProjectile.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateLevel2.hpp">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateLevel3.hpp">
+      <Filter>Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Tasks.hpp">
+      <Filter>Game\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss1.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="AttractProjectile.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxHazard.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="ConeHazardSpawner.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplodingProjectile.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss2.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityConfig.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Wisp.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Scythe.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BobbingProjectile.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss3.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BigGear.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Sawblade.hpp">
+      <Filter>Game\Entities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\Run\Data\GameConfig.xml">
+      <Filter>XML</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Definitions\AnimDefinitions.xml">
+      <Filter>XML</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Definitions\FloatCurves.xml">
+      <Filter>XML</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Definitions\EntityConfigs.xml">
+      <Filter>XML</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

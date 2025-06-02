@@ -1,0 +1,8 @@
+<Material
+  name="asteroid"
+  shader="Data/Shaders/Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Images/ASTEROID_LOW_POLY_1_COLOR_.png"
+  normalTexture="Data/Images/ASTEROID_LOW_POLY_1_NM_.png"
+  color="255,255,255,255"
+/>

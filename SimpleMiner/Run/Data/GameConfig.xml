@@ -1,0 +1,12 @@
+<GameConfig
+  
+  windowTitle="Simple Miner"
+  engineDataPath="../../Engine/Data"
+  readInPrecompiledShaders="true"
+  writeOutCompiledShaders="false"
+  
+  useHSR="true"
+  chunkActivationRange="250"
+  worldSeed="1"
+  disableDayNight="true"
+/>  

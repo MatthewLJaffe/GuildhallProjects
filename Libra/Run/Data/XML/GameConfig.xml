@@ -1,0 +1,17 @@
+<GameConfig
+	
+	windowAspect="2.0"
+	screenWidth="16"
+	screenHeight="8"
+	
+	playerTankTurnRate="180"
+	playerTurretTurnRate="360"
+	playerMaxMoveSpeed="1"
+	playerMaxHealth="20"
+	tankPhysicsRadius=".25"
+	tankCosmeticRadius=".75"
+	defaultEnemyMoveSpeed=".5"
+	defaultEnemyHealth="3"
+	enemyVisionRadius="10"
+/>
+

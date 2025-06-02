@@ -1,0 +1,8 @@
+<FloatCurve name="xSquared">
+<Point position="0.00,0.00"/>
+<Point position="0.50,0.12"/>
+<Point position="0.71,0.31"/>
+<Point position="0.82,0.49"/>
+<Point position="0.89,0.71"/>
+<Point position="1.00,1.00"/>
+</FloatCurve>
