@@ -124,6 +124,7 @@ void Game::CheckForDebugCommands()
 
 void Game::Update(float deltaSeconds)
 {
+	DebugAddMessage("Making a change!", 10.f, 0.f, Rgba8::WHITE);
 	CheckForSwitchGameState();
 	m_scenes[(int)m_currentGameState]->Update(deltaSeconds);
 	if (m_currentGameState == GameState::EDITOR || m_currentGameState == GameState::GAME)
